@@ -1,0 +1,55 @@
+:host{
+    display: block;
+    width: 400px;
+    display: flex;
+    height:100%;
+    justify-content: center;
+    padding-left: 30rem;
+    padding-top: 5rem;
+    padding-right: 32rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    background-color: rgb(234, 153, 222);
+}
+
+// :host{
+//     display: flex;
+//     height: 100%;
+//     width: 100%;
+//     justify-content: center;
+//     background-color: rgb(234, 153, 222);
+    
+// }
+
+mat-card{
+
+    display: flex;
+    justify-content: center;
+    mat-card-header{
+        display: flex;
+        justify-content: center;
+
+      mat-card-title{
+        font-size: 2rem;
+        color: plum
+    }
+  }
+
+  mat-form-field{
+    width: 100%;
+    padding-top: 1rem;
+  }
+  mat-card-actions{
+    button{
+        margin: auto;
+        width: 80%;
+    }
+    h4{
+        margin:0;
+        padding-right: 1rem;
+    }
+
+}
+
+    
+}

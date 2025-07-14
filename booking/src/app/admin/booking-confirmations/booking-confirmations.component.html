@@ -1,0 +1,12 @@
+<h2>Pending Booking Approvals</h2>
+
+<div *ngFor="let booking of bookings">
+  <mat-card *ngIf="!booking.isApproved" class="mb-3">
+    <p><strong>User:</strong> {{ booking.userName }}</p>
+    <p><strong>Tax Professional:</strong> {{ booking.taxProfessionalName }}</p>
+    <p><strong>Slot:</strong> {{ booking.startTime | date: 'shortTime' }} - {{ booking.endTime | date: 'shortTime' }}</p>
+    <p><strong>Status:</strong> <span class="text-warning">Pending</span></p>
+
+    <button mat-raised-button color="primary" (click)="approveBooking(booking.id)" [disabled]="booking.isApproved" >Approve</button>
+  </mat-card>
+</div>

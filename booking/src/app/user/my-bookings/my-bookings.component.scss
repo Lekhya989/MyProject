@@ -1,0 +1,78 @@
+.bookings-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #2a2a42;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(22, 22, 22, 0.3);
+
+  mat-card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f0f0f0;
+  }
+
+  mat-list-item {
+    background-color: #09090e;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+      background-color: #3e3e64;
+    }
+  }
+
+  .booking-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.95rem;
+
+      strong {
+        font-size: 1.05rem;
+        color: #a9a9a9;
+      }
+
+      span {
+        color: #ccc;
+      }
+    }
+
+    .cancel-btn {
+      cursor: pointer;
+      color: #ff80ab;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      align-self: flex-start;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #ff4081;
+      }
+    }
+  }
+
+  .no-bookings-msg {
+    text-align: center;
+    color: #bbb;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+<table mat-table [dataSource]="bookings" class="mat-elevation-z8">
+
+  <!-- User Name Column -->
+  <ng-container matColumnDef="userName">
+    <th mat-header-cell *matHeaderCellDef> User </th>
+    <td mat-cell *matCellDef="let booking"> {{ booking.userName }} </td>
+  </ng-container>
+
+  <!-- Tax Professional Column -->
+  <ng-container matColumnDef="taxProfessionalName">
+    <th mat-header-cell *matHeaderCellDef> Tax Professional </th>
+    <td mat-cell *matCellDef="let booking"> {{ booking.taxProfessionalName }} </td>
+  </ng-container>
+
+  <!-- Start Time -->
+  <ng-container matColumnDef="startTime">
+    <th mat-header-cell *matHeaderCellDef> Start Time </th>
+    <td mat-cell *matCellDef="let booking"> {{ booking.startTime | date: 'short' }} </td>
+  </ng-container>
+
+  <!-- End Time -->
+  <ng-container matColumnDef="endTime">
+    <th mat-header-cell *matHeaderCellDef> End Time </th>
+    <td mat-cell *matCellDef="let booking"> {{ booking.endTime | date: 'short' }} </td>
+  </ng-container>
+
+  <!-- Booked On -->
+  <ng-container matColumnDef="bookedOn">
+    <th mat-header-cell *matHeaderCellDef> Booked On </th>
+    <td mat-cell *matCellDef="let booking"> {{ booking.bookedOn | date: 'short' }} </td>
+  </ng-container>
+
+  <!-- Header and Row Declarations -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

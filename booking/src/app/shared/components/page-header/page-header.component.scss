@@ -1,0 +1,17 @@
+mat-toolbar{
+    .spacer{
+        flex: 1 1 auto;
+    }
+    .user{
+        display:flex;
+        align-items:center;
+        position: fixed;
+        top:2rem;
+        padding-left: 50rem;
+        button{
+        margin-left: 1.5rem;
+            position: fixed;
+          top:0;
+    }
+  }   
+}

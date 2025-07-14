@@ -1,0 +1,6 @@
+@ApptManager_HostAddress = http://localhost:5155
+
+GET {{ApptManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

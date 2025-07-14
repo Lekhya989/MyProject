@@ -1,0 +1,103 @@
+
+<mat-card>
+      <mat-card-title>{{ isEditMode ? 'Edit Tax Professional' : 'Add Tax Professional' }}</mat-card-title>
+            <form [formGroup]="taxProForm" (ngSubmit)="submitTaxPro()">
+            <mat-card-content class="form-grid">
+            <mat-form-field appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" />
+      </mat-form-field>
+ 
+      <mat-form-field appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" />
+      </mat-form-field>
+ 
+      <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+      </mat-form-field>
+ 
+      <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput formControlName="phoneNumber" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+            <mat-label>Speaks Spanish</mat-label>
+            <mat-select formControlName="speaks_spanish">
+                  <mat-option [value]="true">Yes</mat-option>
+                  <mat-option [value]="false">No</mat-option>
+            </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+            <mat-label>SMB Certified</mat-label>
+            <mat-select formControlName="SMB_certified">
+                  <mat-option [value]="true">Yes</mat-option>
+                  <mat-option [value]="false">No</mat-option>
+            </mat-select>
+      </mat-form-field>
+</mat-card-content>
+ 
+      <mat-card-actions>
+            <button mat-raised-button color="primary" type="submit">
+                  {{ isEditMode ? 'Update' : 'Add' }}
+            </button>
+            <button mat-button type="button" (click)="resetForm()">Reset</button>
+      </mat-card-actions>
+</form>
+</mat-card>
+ 
+ 
+<mat-card class="mt-3">
+      <mat-card-title>Tax Professionals</mat-card-title>
+            <table mat-table [dataSource]="taxPros" class="mat-elevation-z8" *ngIf="taxPros.length > 0">
+ 
+      <ng-container matColumnDef="firstName">
+            <th mat-header-cell *matHeaderCellDef>First Name</th>
+            <td mat-cell *matCellDef="let pro">{{ pro.firstName }}</td>
+      </ng-container>
+ 
+      <ng-container matColumnDef="lastName">
+            <th mat-header-cell *matHeaderCellDef>Last Name</th>
+            <td mat-cell *matCellDef="let pro">{{ pro.lastName }}</td>
+      </ng-container>
+ 
+      <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>Email</th>
+            <td mat-cell *matCellDef="let pro">{{ pro.email }}</td>
+      </ng-container>
+ 
+      <ng-container matColumnDef="phoneNumber">
+            <th mat-header-cell *matHeaderCellDef>Phone</th>
+            <td mat-cell *matCellDef="let pro">{{ pro.phoneNumber }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="speaks_spanish">
+            <th mat-header-cell *matHeaderCellDef>Speaks Spanish</th>
+            <td mat-cell *matCellDef="let pro">{{ pro.speaks_spanish }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="SMB_certified">
+            <th mat-header-cell *matHeaderCellDef>SMB Certified</th>
+            <td mat-cell *matCellDef="let pro">{{pro.smB_certified ? 'Yes' : 'No'}}</td>
+      </ng-container>
+ 
+      <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef>Actions</th>
+            <td mat-cell *matCellDef="let pro">
+      <button mat-icon-button color="primary" (click)="editTaxPro(pro)">
+            <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" (click)="deleteTaxPro(pro.id)">
+<mat-icon>delete</mat-icon>
+      </button>
+
+      </td>
+</ng-container>
+ 
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+</mat-card>

@@ -1,0 +1,25 @@
+.full-width {
+  width: 100%;
+}
+
+.option-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.badges {
+  margin-top: 4px;
+  display: flex;
+  gap: 6px;
+}
+
+.profile-card {
+  margin-top: 16px;
+}
+
+.slot-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

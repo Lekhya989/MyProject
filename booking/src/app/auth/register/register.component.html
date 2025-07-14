@@ -1,0 +1,96 @@
+<form [formGroup]="registerForm">
+
+  <div class="register-form">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title style="color:aliceblue">Create Account</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
+
+          
+          <mat-grid-tile>
+            <mat-form-field color="accent">
+              <mat-label>First Name</mat-label>
+              <input matInput formControlName="firstName">
+              <mat-error>Field is required to be filled</mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          
+          <mat-grid-tile>
+            <mat-form-field color="accent">
+              <mat-label>Last Name</mat-label>
+              <input matInput formControlName="lastName">
+              <mat-error>Field is required to be filled</mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          
+          <mat-grid-tile colspan="2">
+            <mat-form-field color="accent">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email">
+              <mat-error>Field is required to be filled</mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          
+          <mat-grid-tile colspan="2">
+            <mat-form-field color="accent">
+              <mat-label>Phone Number</mat-label>
+              <input matInput formControlName="mobileNumber">
+              <mat-error>Field is required to be filled</mat-error>
+            </mat-form-field>
+          </mat-grid-tile> 
+          
+          <mat-grid-tile colspan="2">
+            <mat-form-field color="accent">
+              <mat-label>User Role</mat-label>
+              <mat-select formControlName="userType">
+                <mat-option value="USER">User</mat-option>
+              </mat-select>
+              <mat-error>Field is required</mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          
+          <mat-grid-tile>
+            <mat-form-field color="accent">
+              <mat-label>Password</mat-label>
+              <input [type]="hideContent ? 'password' : 'text'" matInput formControlName="password">
+              <button mat-icon-button matSuffix (click)="hideContent = !hideContent" type="button">
+                <mat-icon>{{hideContent ? "visibility_off" : "visibility_on"}}</mat-icon>
+              </button>
+              <mat-error>Field is required to be filled</mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          
+          <mat-grid-tile>
+            <mat-form-field color="accent">
+              <mat-label>Confirm Password</mat-label>
+              <input [type]="hiderContent ? 'password' : 'text'" matInput formControlName="cpassword">
+              <button mat-icon-button matSuffix (click)="hiderContent = !hiderContent" type="button">
+                <mat-icon>{{hiderContent ? "visibility_off" : "visibility_on"}}</mat-icon>
+              </button>
+              <mat-error>Field is required to be filled</mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+        </mat-grid-list>
+      </mat-card-content>
+
+      <mat-card-actions>
+        
+        <button mat-raised-button color="accent" type="button" (click)="registerUser()">Register</button>
+      </mat-card-actions>
+
+      <mat-card-actions>
+        <h4 style="color:aliceblue">Already have an account</h4>
+        <a mat-stroked-button color="accent" routerLink="/login">Login</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</form>

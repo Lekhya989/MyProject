@@ -1,0 +1,55 @@
+<!-- Select Tax Professional Card -->
+<mat-card class="selection-card">
+  <mat-card-title>Select a Tax Professional</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="slotForm">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Tax Professional</mat-label>
+        <mat-select formControlName="taxProfessionalId" (selectionChange)="onTaxProSelect()">
+          <mat-option *ngFor="let pro of taxPros" [value]="pro.id">
+            <div class="option-details">
+              <strong>{{ pro.firstName }} {{ pro.lastName }}</strong>
+              <div class="badges">
+                <mat-chip *ngIf="pro.SMB_certified" color="primary" selected>SMB Certified</mat-chip>
+                <mat-chip *ngIf="pro.speaks_spanish" color="accent" selected>Speaks Spanish</mat-chip>
+              </div>
+            </div>
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<!-- Selected Tax Pro Details -->
+<mat-card *ngIf="selectedTaxPro" class="profile-card">
+  <mat-card-title>Tax Professional Details</mat-card-title>
+  <mat-card-content>
+    <p><strong>Name:</strong> {{ selectedTaxPro.firstName }} {{ selectedTaxPro.lastName }}</p>
+
+    <p><strong>Certification:</strong>
+      <span *ngIf="selectedTaxPro.SMB_certified">SMB Certified</span>
+      <span *ngIf="!selectedTaxPro.SMB_certified">Not Certified</span>
+    </p>
+
+    <p><strong>Language:</strong>
+      <span *ngIf="selectedTaxPro.speaks_spanish">Speaks Spanish</span>
+      <span *ngIf="!selectedTaxPro.speaks_spanish">English Only</span>
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<!-- Available Slots Card -->
+<mat-card class="slots-card" *ngIf="availableSlots.length > 0">
+  <mat-card-title>Available Slots</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let slot of availableSlots">
+        <div class="slot-item">
+          <span>{{ slot.startTime | date: 'shortTime' }} - {{ slot.endTime | date: 'shortTime' }}</span>
+          <button mat-raised-button color="primary" (click)="bookSlot(slot.id)">Book</button>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

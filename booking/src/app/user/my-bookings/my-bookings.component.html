@@ -1,0 +1,28 @@
+<mat-card class="bookings-card">
+  <mat-card-title> My Bookings</mat-card-title>
+  <mat-card-content *ngIf="bookings.length > 0; else noBookings">
+    <mat-list>
+      <mat-list-item *ngFor="let booking of bookings">
+        <div class="booking-item">
+          <div>
+            <strong>{{ booking.taxProfessionalName }}</strong>
+            <span>{{ booking.bookedOn | date: 'short' }}</span>
+          </div>
+          <div>
+            <span> {{ booking.startTime | date: 'shortTime' }} - {{ booking.endTime | date: 'shortTime' }}</span>
+          </div>
+          <div >
+              <p>Status: {{ booking.isApproved ? 'Approved ✅' : 'Pending ⏳' }}</p>
+          </div>
+          <div>
+            <span class="cancel-btn" (click)="cancelBooking(booking.id)">Cancel</span>
+          </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+  <ng-template #noBookings>
+    <p class="no-bookings-msg">No bookings found.</p>
+  </ng-template>
+</mat-card>

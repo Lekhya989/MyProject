@@ -1,0 +1,25 @@
+<mat-card class="bookings-card">
+  <mat-card-title>Upcoming Bookings</mat-card-title>
+  <mat-card-content *ngIf="upcomingBookings.length > 0; else noUpcoming">
+    <mat-list>
+      <mat-list-item *ngFor="let booking of upcomingBookings">
+        <div class="booking-item">
+          <div>
+            <strong>{{ booking.userName || 'You' }}</strong>
+            <span>{{ booking.startTime | date: 'MMM d, y (EEEE)' }}</span>
+          </div>
+          <div>
+            <span>{{ booking.startTime | date: 'shortTime' }} - {{ booking.endTime | date: 'shortTime' }}</span>
+          </div>
+          <div>
+            <p>Status: {{ booking.isApproved ? '✅ Approved' : '⏳ Pending' }}</p>
+          </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+  <ng-template #noUpcoming>
+    <p class="no-bookings-msg">No upcoming bookings.</p>
+  </ng-template>
+</mat-card>
