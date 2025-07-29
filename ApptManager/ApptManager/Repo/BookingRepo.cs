@@ -1,16 +1,15 @@
 ﻿using ApptManager.Models;
 using ApptManager.Models.Data.WebApi.Models.Data;
 using Dapper;
-using Microsoft.EntityFrameworkCore;
 using System.Data;
 
 namespace ApptManager.Repo
 {
-    public class BookingRepo : IBookingRepo
+    public class BookingRepo : GenericRepository<Bookings>, IBookingRepo
     {
         private readonly DapperDBContext _dbContext;
 
-        public BookingRepo(DapperDBContext dbContext)
+        public BookingRepo(DapperDBContext dbContext) : base(dbContext.CreateConnection())
         {
             _dbContext = dbContext;
         }
@@ -20,20 +19,16 @@ namespace ApptManager.Repo
             using var conn = _dbContext.CreateConnection();
 
             var sql = @"
-        SELECT 
-            b.Id, b.BookedOn,
-            s.StartTime, s.EndTime,b.IsApproved,
-            (tp.FirstName + ' ' + tp.LastName) AS TaxProfessionalName
-        FROM Bookings b
-        JOIN Slots s ON b.SlotId = s.Id
-        JOIN TaxProfessionals tp ON s.TaxProfessionalId = tp.Id
-        WHERE b.UserId = @UserId";
+                SELECT 
+                    b.Id, b.BookedOn,
+                    s.StartTime, s.EndTime, b.IsApproved,
+                    (tp.FirstName + ' ' + tp.LastName) AS TaxProfessionalName
+                FROM Bookings b
+                JOIN Slots s ON b.SlotId = s.Id
+                JOIN TaxProfessionals tp ON s.TaxProfessionalId = tp.Id
+                WHERE b.UserId = @UserId";
 
-            
-                var result = await conn.QueryAsync<BookingDetailsDto>(sql, new { UserId = userId });
-                Console.WriteLine("Fetched bookings: " + result.Count());
-                return result;
-            
+            return await conn.QueryAsync<BookingDetailsDto>(sql, new { UserId = userId });
         }
 
         public async Task<IEnumerable<BookingDetailsDto>> GetAllBookingsAsync()
@@ -41,19 +36,18 @@ namespace ApptManager.Repo
             using var conn = _dbContext.CreateConnection();
 
             var sql = @"
-        SELECT 
-            b.Id, b.UserId, b.SlotId, b.BookedOn, b.IsApproved, 
-            u.FirstName + ' ' + u.LastName AS UserName,
-            s.StartTime, s.EndTime,
-            CONCAT(tp.FirstName, ' ', tp.LastName) AS TaxProfessionalName
-        FROM Bookings b
-        JOIN Users u ON b.UserId = u.Id
-        JOIN Slots s ON b.SlotId = s.Id
-        JOIN TaxProfessionals tp ON s.TaxProfessionalId = tp.Id";
+                SELECT 
+                    b.Id, b.UserId, b.SlotId, b.BookedOn, b.IsApproved, 
+                    u.FirstName + ' ' + u.LastName AS UserName,
+                    s.StartTime, s.EndTime,
+                    CONCAT(tp.FirstName, ' ', tp.LastName) AS TaxProfessionalName
+                FROM Bookings b
+                JOIN Users u ON b.UserId = u.Id
+                JOIN Slots s ON b.SlotId = s.Id
+                JOIN TaxProfessionals tp ON s.TaxProfessionalId = tp.Id";
 
             return await conn.QueryAsync<BookingDetailsDto>(sql);
         }
-
 
         public async Task<int> CreateBookingAsync(Bookings booking)
         {
@@ -64,7 +58,7 @@ namespace ApptManager.Repo
             try
             {
                 var insertSql = @"INSERT INTO Bookings (UserId, SlotId, BookedOn)
-                          VALUES (@UserId, @SlotId, @BookedOn)";
+                                  VALUES (@UserId, @SlotId, @BookedOn)";
                 await conn.ExecuteAsync(insertSql, booking, transaction);
 
                 var updateSlotSql = @"UPDATE Slots SET IsBooked = 1 WHERE Id = @SlotId";
@@ -100,18 +94,17 @@ namespace ApptManager.Repo
             using var conn = _dbContext.CreateConnection();
             var sql = "SELECT * FROM Bookings WHERE Id = @Id";
             return await conn.QueryFirstOrDefaultAsync<Bookings>(sql, new { Id = id });
-
         }
 
         public async Task<bool> UpdateBookingAsync(Bookings booking)
         {
             using var conn = _dbContext.CreateConnection();
             var sql = @"UPDATE Bookings 
-                SET SlotId = @SlotId, 
-                    UserId = @UserId, 
-                    BookedOn = @BookedOn, 
-                    IsApproved = @IsApproved 
-                WHERE Id = @Id";
+                        SET SlotId = @SlotId, 
+                            UserId = @UserId, 
+                            BookedOn = @BookedOn, 
+                            IsApproved = @IsApproved 
+                        WHERE Id = @Id";
 
             var rowsAffected = await conn.ExecuteAsync(sql, booking);
             return rowsAffected > 0;
@@ -123,16 +116,16 @@ namespace ApptManager.Repo
             var now = DateTime.UtcNow;
 
             var sql = @"
-        SELECT 
-            b.Id, b.UserId, b.SlotId, b.BookedOn, b.IsApproved,
-            u.FirstName + ' ' + u.LastName AS UserName,
-            s.StartTime, s.EndTime,
-            CONCAT(tp.FirstName, ' ', tp.LastName) AS TaxProfessionalName
-        FROM Bookings b
-        JOIN Users u ON b.UserId = u.Id
-        JOIN Slots s ON b.SlotId = s.Id
-        JOIN TaxProfessionals tp ON s.TaxProfessionalId = tp.Id
-        WHERE s.StartTime > @Now AND s.EndTime>@Now";
+                SELECT 
+                    b.Id, b.UserId, b.SlotId, b.BookedOn, b.IsApproved,
+                    u.FirstName + ' ' + u.LastName AS UserName,
+                    s.StartTime, s.EndTime,
+                    CONCAT(tp.FirstName, ' ', tp.LastName) AS TaxProfessionalName
+                FROM Bookings b
+                JOIN Users u ON b.UserId = u.Id
+                JOIN Slots s ON b.SlotId = s.Id
+                JOIN TaxProfessionals tp ON s.TaxProfessionalId = tp.Id
+                WHERE s.StartTime > @Now AND s.EndTime > @Now";
 
             if (userId.HasValue)
             {
@@ -141,7 +134,5 @@ namespace ApptManager.Repo
 
             return await conn.QueryAsync<BookingDetailsDto>(sql, new { Now = now, UserId = userId });
         }
-
-
     }
 }

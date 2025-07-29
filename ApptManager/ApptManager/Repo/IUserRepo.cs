@@ -2,16 +2,12 @@
 
 namespace ApptManager.Repo
 {
-    public interface IUserRepo
+    public interface IUserRepo : IGenericRepository<User>
     {
-        Task<List<UserObj>> GetAll();
-        Task<UserObj>GetbyId(int Id);
-        Task<string> Create(UserObj user);
-        Task<string>Update(UserObj user, int Id);
-        Task<string> Remove (int Id);
-        Task<UserObj> GetByEmail(string Email); 
+        Task<string> Create(User user); // Custom create with password hashing
+        Task<User?> GetByEmail(string email); // Custom email lookup
+        Task<string> Update(User user, int id);        // Custom update
+      
 
     }
-
-
 }

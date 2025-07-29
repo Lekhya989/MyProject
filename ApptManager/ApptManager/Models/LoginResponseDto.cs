@@ -1,6 +1,6 @@
-﻿namespace ApptManager.Models
+﻿namespace ApptManager.DTOs
 {
-    public class LoginResponse
+    public class LoginResponseDto
     {
         public string Token { get; set; }
         public string UserType { get; set; }

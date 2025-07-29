@@ -1,0 +1,51 @@
+2025-07-28 17:42:38.705 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-28 17:42:38.944 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-28 17:42:38.944 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-28 17:42:39.004 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-28 17:42:39.004 +05:30 [INF] Hosting environment: Development
+2025-07-28 17:42:39.004 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-28 17:42:46.155 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/index.html - null null
+2025-07-28 17:42:46.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/index.html - 200 null text/html;charset=utf-8 344.4886ms
+2025-07-28 17:42:46.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-28 17:42:46.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_vs/browserLink - null null
+2025-07-28 17:42:46.693 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 20.255ms
+2025-07-28 17:42:46.736 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.2521ms
+2025-07-28 17:42:46.811 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - null null
+2025-07-28 17:42:46.833 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.8047ms
+2025-07-28 17:42:58.945 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/User/GetAll - null null
+2025-07-28 17:42:59.008 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.GetAll (ApptManager)'
+2025-07-28 17:42:59.029 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-28 17:42:59.492 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.User, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-28 17:42:59.508 +05:30 [INF] Executed action ApptManager.Controllers.UserController.GetAll (ApptManager) in 475.5684ms
+2025-07-28 17:42:59.508 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.GetAll (ApptManager)'
+2025-07-28 17:42:59.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/GetAll - 200 null application/json; charset=utf-8 566.5652ms
+2025-07-28 17:43:17.256 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/User/GetById/5 - null null
+2025-07-28 17:43:17.261 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.GetById (ApptManager)'
+2025-07-28 17:43:17.269 +05:30 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-28 17:43:17.316 +05:30 [INF] fetched a user by id
+2025-07-28 17:43:17.318 +05:30 [INF] Executing OkObjectResult, writing value of type 'ApptManager.Models.User'.
+2025-07-28 17:43:17.318 +05:30 [INF] Executed action ApptManager.Controllers.UserController.GetById (ApptManager) in 48.4744ms
+2025-07-28 17:43:17.318 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.GetById (ApptManager)'
+2025-07-28 17:43:17.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/GetById/5 - 200 null application/json; charset=utf-8 62.0361ms
+2025-07-28 22:43:13.446 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-28 22:43:13.796 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-28 22:43:13.797 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-28 22:43:14.146 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-28 22:43:14.146 +05:30 [INF] Hosting environment: Development
+2025-07-28 22:43:14.146 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-28 22:43:17.740 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/index.html - null null
+2025-07-28 22:43:18.004 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/index.html - 200 null text/html;charset=utf-8 271.1667ms
+2025-07-28 22:43:18.018 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_vs/browserLink - null null
+2025-07-28 22:43:18.018 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-28 22:43:18.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.6789ms
+2025-07-28 22:43:18.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.3368ms
+2025-07-28 22:43:18.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - null null
+2025-07-28 22:43:18.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.0607ms
+2025-07-28 22:43:25.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/TaxProfessional/getAll - null null
+2025-07-28 22:43:25.664 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager)'
+2025-07-28 22:43:25.692 +05:30 [INF] Route matched with {action = "GetAll", controller = "TaxProfessional"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ApptManager.Controllers.TaxProfessionalController (ApptManager).
+2025-07-28 22:43:26.272 +05:30 [INF] Fetched All TaxPros
+2025-07-28 22:43:26.280 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.TaxProfessional, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-28 22:43:26.300 +05:30 [INF] Executed action ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager) in 603.8237ms
+2025-07-28 22:43:26.301 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager)'
+2025-07-28 22:43:26.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/TaxProfessional/getAll - 200 null application/json; charset=utf-8 708.4607ms

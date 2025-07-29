@@ -1,0 +1,126 @@
+// Utility spacing
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+// Card Container
+mat-card {
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(to bottom right, #cb60de, #7b46de); // 💜 Soft purple gradient
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  mat-card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #c9bcd9; // Deep purple
+    padding: 1rem 1rem 0.5rem;
+  }
+
+  mat-card-content {
+    padding: 1rem 1.5rem;
+  }
+
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+
+    button {
+      padding: 0.6rem 1.5rem;
+      font-weight: 500;
+      border-radius: 8px;
+    }
+
+    button[color="primary"] {
+      background-color: #46055a; // Teal accent
+      color: white;
+
+      &:hover {
+        background-color: #9215bb;
+      }
+    }
+
+    button[color="warn"] {
+      background-color: #bf35e5;
+      color: white;
+
+      &:hover {
+        background-color: #c163ce;
+      }
+    }
+  }
+}
+
+// Form Grid
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+
+  mat-form-field {
+    width: 100%;
+    background: rgb(175, 54, 147);
+    border-radius: 8px;
+    padding: 0.2rem;
+  }
+}
+
+// Data Table
+table {
+  width: 100%;
+  border-spacing: 0;
+  background: #eb6666;
+  border-radius: 12px;
+  overflow: hidden;
+
+  th {
+    background-color: #934eaf; // Indigo
+    color: #5517a5;
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  td {
+    padding: 12px;
+    color: #333;
+    font-size: 0.95rem;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #8b3a98; // Lavender
+  }
+
+  tr:hover td {
+    background-color: #835ac2;
+  }
+  .tax-pro-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #562f91, #b22b85); // 🌸 Light lavender gradient
+}
+
+
+  .mat-column-actions {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      mat-icon {
+        color: #4a148c;
+      }
+    }
+  }
+}

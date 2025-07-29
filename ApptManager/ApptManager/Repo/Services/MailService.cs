@@ -13,7 +13,7 @@ namespace ApptManager.Repo.Services
             {
                 _mailSettings = mailSettings.Value;
             }
-        public async Task SendEmailAsync(MailRequest mailRequest)
+        public async Task SendEmailAsync(MailRequestDto mailRequest)
         {
             try
             {

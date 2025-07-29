@@ -1,27 +1,49 @@
-﻿using ApptManager.Models;
-using Microsoft.EntityFrameworkCore;
-using ApptManager.Services;
+﻿using ApptManager.DTOs;
+using ApptManager.Models;
+using ApptManager.Repo;
+using ApptManager.UnitOfWork;
+using AutoMapper;
 
-namespace ApptManager.Repo.Services
+namespace ApptManager.Services
 {
     public class SlotService : ISlotService
     {
-        private readonly ISlotRepo _repo;
-        public SlotService(ISlotRepo repo )
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public SlotService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _repo = repo; 
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
-        public Task GenerateSlots(int taxProfessionalId, DateTime start, DateTime end)
-            => _repo.GenerateSlots(taxProfessionalId, start, end);
-        public Task<List<Slot>> GetSlotsByTaxPro(int id)
-            => _repo.GetSlotsByTaxPro(id);
-        public Task<string> UpdateSlot(Slot slot)
-            => _repo.UpdateSlot(slot);
-        public Task<string> DeleteSlot(int id)
-            => _repo.DeleteSlot(id);
-        public Task<Slot> GetSlotByIdAsync(int slotId)
+
+        public async Task GenerateSlots(SlotGenerationRequestDto slotGenerationRequestDto)
         {
-            return _repo.GetById(slotId);
+            await _unitOfWork.Slots.GenerateSlots(slotGenerationRequestDto);
+        }
+
+        public async Task<List<SlotDto>> GetSlotsByTaxPro(int id)
+        {
+            var slots = await _unitOfWork.Slots.GetSlotsByTaxPro(id);
+            return _mapper.Map<List<SlotDto>>(slots);
+        }
+
+        public async Task<string> UpdateSlot(int id, SlotUpdateDto dto)
+        {
+            var slot = _mapper.Map<Slot>(dto);
+            slot.Id = id;
+            return await _unitOfWork.Slots.UpdateSlot(slot);
+        }
+
+        public Task<string> DeleteSlot(int id)
+        {
+            return _unitOfWork.Slots.DeleteSlot(id);
+        }
+
+        public async Task<SlotDto> GetSlotByIdAsync(int slotId)
+        {
+            var slot = await _unitOfWork.Slots.GetByIdAsync(slotId);
+            return _mapper.Map<SlotDto>(slot);
         }
     }
 }

@@ -1,0 +1,55 @@
+h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+// Booking card
+mat-card.mb-3 {
+  background: linear-gradient(to right, #cb60de, #7b46de); // Consistent gradient
+  color: #fff;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+
+    strong {
+      color: #ffe9ff;
+    }
+
+    .text-warning {
+      color: #ffc107; // Bright yellow for pending status
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+    background-color: #46055a;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+
+    &:hover {
+      background-color: #9215bb;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}

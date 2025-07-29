@@ -1,9 +1,12 @@
+<!-- Generate Slots Form -->
 <mat-card class="mt-3">
   <mat-card-title>Generate Slots</mat-card-title>
+
   <form [formGroup]="slotForm" (ngSubmit)="submitSlot()">
     <mat-card-content class="form-grid">
+
       <!-- Tax Professional Dropdown -->
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" class="full-width">
         <mat-label>Select Tax Professional</mat-label>
         <mat-select formControlName="taxProfessionalId" (selectionChange)="onTaxProfessionalChange($event.value)">
           <mat-option *ngFor="let pro of taxPros" [value]="pro.id">
@@ -12,66 +15,85 @@
         </mat-select>
       </mat-form-field>
 
-      <!-- Start Time -->
-      <mat-form-field appearance="fill">
-        <mat-label>Start Time</mat-label>
-        <input matInput type="datetime-local" formControlName="startTime" />
+      <!-- Date Picker -->
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Select Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
 
-      <!-- End Time -->
-      <mat-form-field appearance="fill">
-        <mat-label>End Time</mat-label>
-        <input matInput type="datetime-local" formControlName="endTime" />
+      <!-- Start Time Dropdown -->
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Start Time</mat-label>
+        <mat-select formControlName="startTime">
+          <mat-option *ngFor="let time of timeSlots" [value]="time">
+            {{ time }}
+          </mat-option>
+        </mat-select>
       </mat-form-field>
+
+      <!-- End Time Dropdown -->
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>End Time</mat-label>
+        <mat-select formControlName="endTime">
+          <mat-option *ngFor="let time of timeSlots" [value]="time">
+            {{ time }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
     </mat-card-content>
 
     <mat-card-actions>
-      <button mat-raised-button color="accent" type="submit" [disabled]="slotForm.invalid">
-        Generate Slots
+      <button mat-raised-button color="primary" type="submit" [disabled]="slotForm.invalid">
+        {{ isEditMode ? 'Update Slot' : 'Generate Slots' }}
+      </button>
+      <button mat-button type="button" (click)="resetSlotForm()" *ngIf="isEditMode">
+        Cancel Edit
       </button>
     </mat-card-actions>
   </form>
 </mat-card>
 
-<!-- Display Slots -->
+<!-- Display Existing Slots -->
 <mat-card class="mt-4">
   <mat-card-header>
     <mat-card-title>Slots for Tax Professional</mat-card-title>
   </mat-card-header>
 
-  <h3 *ngIf="selectedProName" class="px-4 text-lg font-medium">
-    Slots for {{ selectedProName }}
-  </h3>
+  <mat-card-content>
+    <h3 *ngIf="selectedProName">
+      Slots for {{ selectedProName }}
+    </h3>
 
-  <mat-card-content *ngIf="slots.length > 0; else noSlots">
-    <div class="slot-grid">
-      <mat-card class="slot-card" *ngFor="let slot of slots">
-        <mat-card-content>
-          <p><strong>Start:</strong> {{ slot.startTime | date: 'short' }}</p>
-          <p><strong>End:</strong> {{ slot.endTime | date: 'short' }}</p>
-          <p>
-            <strong>Status:</strong>
-            <span [ngClass]="slot.isBooked ? 'booked' : 'available'">
-              {{ slot.isBooked ? 'Booked' : 'Available' }}
-            </span>
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-icon-button color="primary" (click)="editSlot(slot)" matTooltip="Edit Slot">
-            <mat-icon>edit</mat-icon>
-          </button>
-          <button mat-icon-button color="warn" (click)="deleteSlot(slot.id)" matTooltip="Delete Slot">
-            <mat-icon>delete</mat-icon>
-          </button>
-        </mat-card-actions>
-      </mat-card>
+    <div *ngIf="slots.length > 0; else noSlots">
+      <div class="slot-grid">
+        <mat-card class="slot-card" *ngFor="let slot of slots; trackBy: trackById">
+          <mat-card-content>
+            <p><strong>Start:</strong> {{ slot.startTime | date: 'shortTime' }}</p>
+            <p><strong>End:</strong> {{ slot.endTime | date: 'shortTime' }}</p>
+            <p>
+              <strong>Status:</strong>
+              <span [ngClass]="slot.isBooked ? 'booked' : 'available'">
+                {{ slot.isBooked ? 'Booked' : 'Available' }}
+              </span>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-icon-button color="primary" (click)="editSlot(slot)" matTooltip="Edit Slot">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="deleteSlot(slot.id)" matTooltip="Delete Slot">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
-  </mat-card-content>
 
-  <!-- No Slots Fallback -->
-  <ng-template #noSlots>
-    <mat-card-content>
-      <p class="text-muted">No slots generated yet for this tax professional.</p>
-    </mat-card-content>
-  </ng-template>
+    <ng-template #noSlots>
+      <p>No slots available for this tax professional.</p>
+    </ng-template>
+  </mat-card-content>
 </mat-card>

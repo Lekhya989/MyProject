@@ -5,6 +5,6 @@ namespace ApptManager.Repo.Services
 {
     public interface IMailService
     {
-        Task SendEmailAsync(MailRequest mailRequest);
+        Task SendEmailAsync(MailRequestDto mailRequest);
     }
 }

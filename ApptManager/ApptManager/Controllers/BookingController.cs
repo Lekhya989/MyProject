@@ -1,60 +1,58 @@
-﻿using ApptManager.Models;
+﻿using ApptManager.DTOs;
+using ApptManager.Models;
 using ApptManager.Repo.Services;
 using ApptManager.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System.Security.Claims;
 
 namespace ApptManager.Controllers
 {
-
     [ApiController]
     [Route("api/[controller]")]
-   
-    
     public class BookingController : ControllerBase
     {
         private readonly IBookingService _bookingService;
         private readonly IUserService _userService;
         private readonly ISlotService _slotService;
+        private readonly IMapper _mapper;
 
-        public BookingController(IBookingService bookingService, ISlotService slotService, IUserService userService)
+        public BookingController(
+            IBookingService bookingService,
+            ISlotService slotService,
+            IUserService userService,
+            IMapper mapper)
         {
             _bookingService = bookingService;
             _userService = userService;
             _slotService = slotService;
+            _mapper = mapper;
         }
 
         [HttpGet("My")]
         public async Task<IActionResult> GetByBookings()
         {
-            try
-            {
-                var userId = GetCurrentUserId();
-                if (userId == null)
-                    return Unauthorized();
+            var userId = GetCurrentUserId();
+            if (userId == null)
+                return Unauthorized();
 
-                var bookings = await _bookingService.GetBookingsByUserIdAsync(userId.Value);
-                return Ok(bookings);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Exception in GetMyBookings: " + ex.Message);
-                return StatusCode(500, "Something went wrong: " + ex.Message);
-            }
+            var bookings = await _bookingService.GetBookingsByUserIdAsync(userId.Value);
+            var dto = _mapper.Map<IEnumerable<BookingDetailsDto>>(bookings);
+            Log.Information("Fetched bookings");
+            return Ok(dto);
         }
-
-
 
         [HttpGet("all")]
         public async Task<IActionResult> GetAllBookings()
         {
             var bookings = await _bookingService.GetAllBookingsAsync();
-            return Ok(bookings);
+            var dto = _mapper.Map<IEnumerable<BookingDetailsDto>>(bookings);
+            Log.Information("Fetched all bookings");
+            return Ok(dto);
         }
 
-
-       
         [HttpPost]
         public async Task<IActionResult> CreateBooking([FromBody] CreateBookingDto dto)
         {
@@ -62,23 +60,20 @@ namespace ApptManager.Controllers
             if (userId == null)
                 return Unauthorized();
 
-            var user = await _userService.GetbyId(userId.Value);
+            var user = await _userService.GetById(userId.Value);
             if (user == null) return NotFound("User not found");
 
             var slot = await _slotService.GetSlotByIdAsync(dto.SlotId);
             if (slot == null) return NotFound("Slot not found");
 
-            var booking = new Bookings
-            {
-                SlotId = dto.SlotId,
-                UserId = userId.Value,
-                BookedOn = DateTime.UtcNow,
-                IsApproved = false
-            };
+            // Map User and Slot to their corresponding DTOs
+            var userDto = _mapper.Map<UserResponseDto>(user);
+            var slotDto = _mapper.Map<SlotDto>(slot);
 
             try
             {
-                var result = await _bookingService.CreateBookingAsync(booking, user, slot);
+                var result = await _bookingService.CreateBookingAsync(dto, userDto, slotDto);
+                Log.Information("Created bookings");
 
                 return result > 0
                     ? Ok(new { message = "Booking successful" })
@@ -86,11 +81,10 @@ namespace ApptManager.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Booking error: " + ex.Message);
+                Log.Error("Booking error: {Message}", ex.Message);
                 return StatusCode(500, "Booking failed: " + ex.Message);
             }
         }
-
 
 
         [HttpPost("approve/{id}")]
@@ -100,12 +94,11 @@ namespace ApptManager.Controllers
             if (!success)
                 return BadRequest("Approval failed or booking already approved.");
 
+            Log.Information("Approved bookings");
             return Ok("Booking approved.");
         }
 
-
         [HttpGet("Upcoming")]
-
         public async Task<IActionResult> GetUpcomingBookings()
         {
             var role = User.Claims.FirstOrDefault(c => c.Type.Contains("role"))?.Value;
@@ -121,36 +114,40 @@ namespace ApptManager.Controllers
             }
 
             var result = await _bookingService.GetUpcomingBookingsAsync(userId);
-            return Ok(result);
+            var dto = _mapper.Map<IEnumerable<BookingDetailsDto>>(result);
+            Log.Information("Showing upcoming bookings");
+            return Ok(dto);
         }
 
-
-
         [HttpGet("Pending")]
-
         public async Task<IActionResult> GetPendingBookings()
         {
             var bookings = await _bookingService.GetAllBookingsAsync();
             var pending = bookings.Where(b => !b.IsApproved);
-            return Ok(pending);
+            var dto = _mapper.Map<IEnumerable<BookingDetailsDto>>(pending);
+
+            Log.Information("Get pending booking confirmations");
+            return Ok(dto);
         }
-
-
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> CancelBooking(int id)
         {
             var result = await _bookingService.DeleteBookingAsync(id);
-            return result > 0 ? Ok(new { message = "Booking deleted" }) : NotFound();
+            Log.Information("Deleted booking by id");
+
+            return result > 0
+                ? Ok(new { message = "Booking deleted" })
+                : NotFound("Booking not found");
         }
 
         private int? GetCurrentUserId()
         {
-            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier || c.Type.EndsWith("nameidentifier"));
+            var userIdClaim = User.Claims.FirstOrDefault(c =>
+                c.Type == ClaimTypes.NameIdentifier ||
+                c.Type.EndsWith("nameidentifier"));
+
             return int.TryParse(userIdClaim?.Value, out var id) ? id : null;
         }
-
-
-
     }
 }

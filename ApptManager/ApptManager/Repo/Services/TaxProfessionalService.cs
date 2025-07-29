@@ -1,36 +1,48 @@
-﻿using ApptManager.Models;
-
-using ApptManager.Repo;
+﻿using ApptManager.DTOs;
+using ApptManager.Models;
+using ApptManager.UnitOfWork;
+using AutoMapper;
 
 namespace ApptManager.Services
 {
     public class TaxProfessionalService : ITaxProfessionalService
     {
-        private readonly ITaxProfessionalRepo _repo;
-        public TaxProfessionalService(ITaxProfessionalRepo repo)
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public TaxProfessionalService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _repo = repo;
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
-        public Task<string> CreateTaxProfessional(TaxProfessional taxPro)
+
+        public async Task<string> CreateTaxProfessional(CreateTaxProfessionalDto dto)
         {
-            return _repo.Create(taxPro);
+            var entity = _mapper.Map<TaxProfessional>(dto);
+            return await _unitOfWork.TaxProfessionals.Create(entity);
         }
-        public Task<List<TaxProfessional>> GetAllTaxProfessionals()
+
+        public async Task<List<TaxProfessionalDto>> GetAllTaxProfessionals()
         {
-            return _repo.GetAll();
+            var taxPros = await _unitOfWork.TaxProfessionals.GetAllAsync();
+            return _mapper.Map<List<TaxProfessionalDto>>(taxPros);
         }
-        public Task<TaxProfessional?> GetTaxProfessionalById(int id)
+
+        public async Task<TaxProfessionalDto?> GetTaxProfessionalById(int id)
         {
-            return _repo.GetById(id);
+            var entity = await _unitOfWork.TaxProfessionals.GetByIdAsync(id);
+            return entity == null ? null : _mapper.Map<TaxProfessionalDto>(entity);
         }
-        public Task<string> UpdateTaxProfessional(int id, TaxProfessional taxPro)
+
+        public async Task<string> UpdateTaxProfessional(int id, CreateTaxProfessionalDto dto)
         {
-            return _repo.Update(taxPro, id);
+            var entity = _mapper.Map<TaxProfessional>(dto);
+            return await _unitOfWork.TaxProfessionals.Update(entity, id);
         }
-        public Task<string> RemoveTaxProfessional(int id)
+
+        public Task<int> RemoveTaxProfessional(int id)
         {
-            return _repo.Remove(id);
+            return _unitOfWork.TaxProfessionals.DeleteAsync(id);
         }
     }
 }
-

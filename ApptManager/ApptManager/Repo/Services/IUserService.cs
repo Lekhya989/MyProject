@@ -1,15 +1,12 @@
 ﻿using ApptManager.Models;
-using ApptManager.Repo;
+using ApptManager.DTOs;
 
-namespace ApptManager.Repo.Services
+public interface IUserService
 {
-    public interface IUserService
-    {
-        Task<List<UserObj>> GetAll();
-        Task<UserObj> GetbyId(int Id);
-        Task<string> Create(UserObj user);
-        Task<string> Remove(int Id);
-        Task<string> Update(UserObj user, int id);
-        Task<UserObj> GetByEmail(string email);
-    }
+    Task<string> Create(CreateUserDto dto);
+    Task<List<UserResponseDto>> GetAll();
+    Task<UserResponseDto?> GetById(int id);
+    Task<string> Update(UpdateUserDto dto, int id);
+    Task<string> Remove(int id);
+    Task<User?> GetByEmail(string email);
 }

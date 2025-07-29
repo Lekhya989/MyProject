@@ -1,166 +1,151 @@
-﻿// Services/BookingService.cs
+﻿using ApptManager.DTOs;
 using ApptManager.Models;
 using ApptManager.Models.Data.WebApi.Models.Data;
-using ApptManager.Repo;
 using ApptManager.Repo.Services;
-using Dapper;
-using Microsoft.EntityFrameworkCore;
+using ApptManager.Services;
+using ApptManager.UnitOfWork;
+using AutoMapper;
 
-namespace ApptManager.Services
+public class BookingService : IBookingService
 {
-    public class BookingService : IBookingService
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly IMailService _mailService;
+    private readonly DapperDBContext _dBContext;
+    private readonly IMapper _mapper;
+
+    public BookingService(
+        IUnitOfWork unitOfWork,
+        IMailService mailService,
+        DapperDBContext dbContext,
+        IMapper mapper)
     {
-        private readonly IBookingRepo _bookingRepo;
-        private readonly IMailService _mailService;
-        private readonly IUserRepo _userRepo;
-        private readonly ISlotRepo _slotRepo;
-        private readonly DapperDBContext _dBContext;
-       
+        _unitOfWork = unitOfWork;
+        _mailService = mailService;
+        _dBContext = dbContext;
+        _mapper = mapper;
+    }
 
-        public BookingService(IBookingRepo bookingRepo, IMailService mailService, IUserRepo userRepo, DapperDBContext dbContext,
-    ISlotRepo slotRepo)
-        {
-            _bookingRepo = bookingRepo;
-            _mailService = mailService;
-            _userRepo = userRepo;
-            _slotRepo = slotRepo;
-            _dBContext = dbContext;
-        }
+    public Task<IEnumerable<BookingDetailsDto>> GetBookingsByUserIdAsync(int userId)
+        => _unitOfWork.Bookings.GetBookingsByUserIdAsync(userId);
 
-        public async Task<IEnumerable<BookingDetailsDto>> GetBookingsByUserIdAsync(int userId)
+    public async Task<int> CreateBookingAsync(CreateBookingDto bookingDto, UserResponseDto userDto, SlotDto slotDto)
+    {
+        var booking = new Bookings
         {
-            return await _bookingRepo.GetBookingsByUserIdAsync(userId);
-        }
+            SlotId = bookingDto.SlotId,
+            UserId = userDto.Id,
+            BookedOn = DateTime.UtcNow,
+            IsApproved = false
+        };
 
-        public async Task<int> CreateBookingAsync(Bookings booking, UserObj user, Slot slot)
+        var result = await _unitOfWork.Bookings.CreateBookingAsync(booking);
+        if (result > 0)
         {
-            booking.BookedOn = DateTime.UtcNow;
-            var result =await _bookingRepo.CreateBookingAsync(booking);
-            if (result > 0)
+            try
             {
-                try
+                await _mailService.SendEmailAsync(new MailRequestDto
                 {
-                    Console.WriteLine(" Preparing to send user email...");
-                    var userMail = new MailRequest
-                    {
-                        ToEmail = user.Email,
-                        Subject = "Booking Confirmation - Tax Pros",
-                        Body = $"Hi {user.FirstName},<br/><br/>Your slot with Tax Professional is confirmed from <b>{slot.StartTime:hh:mm tt}</b> to <b>{slot.EndTime:hh:mm tt}</b>.<br/><br/>Thank you,<br/>Tax Pros Team"
-                    };
-                    await _mailService.SendEmailAsync(userMail);
+                    ToEmail = userDto.Email,
+                    Subject = "Booking Confirmation - Tax Pros",
+                    Body = $"Hi {userDto.FirstName},<br/><br/>Your slot with Tax Professional is confirmed from <b>{slotDto.StartTime:hh:mm tt}</b> to <b>{slotDto.EndTime:hh:mm tt}</b>.<br/><br/>Thank you,<br/>Tax Pros Team"
+                });
 
-                    Console.WriteLine(" User email sent!");
-
-                    var adminMail = new MailRequest
-                    {
-                        ToEmail = "lekhyachowdary9@gmail.com", 
-                        Subject = "New Slot Booking",
-                        Body = $"User <b>{user.FirstName} {user.LastName}</b> has booked a slot with Tax Professional ID <b>{slot.TaxProfessionalId}</b> from <b>{slot.StartTime:hh:mm tt}</b> to <b>{slot.EndTime:hh:mm tt}</b>."
-                    };
-                    await _mailService.SendEmailAsync(adminMail);
-                    Console.WriteLine("Admin email sent!");
-                }
-                catch (Exception emailEx)
+                await _mailService.SendEmailAsync(new MailRequestDto
                 {
-                    Console.WriteLine(" Email sending failed: " + emailEx.Message);
-                }
+                    ToEmail = "lekhyachowdary9@gmail.com",
+                    Subject = "New Slot Booking",
+                    Body = $"User <b>{userDto.FirstName} {userDto.LastName}</b> has booked a slot with Tax Professional ID <b>{slotDto.TaxProfessionalId}</b> from <b>{slotDto.StartTime:hh:mm tt}</b> to <b>{slotDto.EndTime:hh:mm tt}</b>."
+                });
             }
-            return result;
-        }
-
-
-        public async Task<IEnumerable<BookingDetailsDto>> GetAllBookingsAsync()
-        {
-            return await _bookingRepo.GetAllBookingsAsync();
-        }
-        public async Task<int> DeleteBookingAsync(int id)
-        {
-            return await _bookingRepo.DeleteBookingAsync(id);
-        }
-
-        public async Task<Bookings> GetBookingByIdAsync(int id)
-        {
-            return await _bookingRepo.GetBookingByIdAsync(id);
-        }
-
-        public async Task<IEnumerable<BookingDetailsDto>> GetUpcomingBookingsAsync(int? userId = null)
-        {
-            return await _bookingRepo.GetUpcomingBookingsAsync(userId);
-        }
-
-
-        public async Task<bool> UpdateBookingAsync(Bookings booking)
-        {
-            var sql = "UPDATE Bookings SET IsApproved = @IsApproved WHERE Id - @Id";
-            using var conn = _dBContext.CreateConnection();
-            var result = await conn.ExecuteAsync(sql, booking);
-            return true;
-        }
-
-        public async Task<bool> ApproveBookingAsync(int bookingId)
-        {
-            var booking = await _bookingRepo.GetBookingByIdAsync(bookingId);
-            if (booking == null || booking.IsApproved) return false;
-
-            booking.IsApproved = true;
-            var updateResult = await _bookingRepo.UpdateBookingAsync(booking);
-            if (updateResult)
+            catch (Exception ex)
             {
-                var user = await _userRepo.GetbyId(booking.UserId);
-                var slot = await _slotRepo.GetById(booking.SlotId);
-
-                var email = new MailRequest
-                {
-                    ToEmail = user.Email,
-                    Subject = "Booking Approved - Tax Pros",
-                    Body = $"Hello {user.FirstName},<br/><br/>" +
-                   $"Your booking for the slot from <b>{slot.StartTime:hh:mm tt}</b> to <b>{slot.EndTime:hh:mm tt}</b> has been approved.<br/><br/>" +
-                   $"Thank you,<br/>Tax Pros Team"
-                };
-
-                await _mailService.SendEmailAsync(email);
+                Console.WriteLine("Email sending failed: " + ex.Message);
             }
-            return updateResult;
         }
 
+        return result;
+    }
 
-        public async Task SendRemainderEmailAsync()
+    public Task<IEnumerable<BookingDetailsDto>> GetAllBookingsAsync()
+        => _unitOfWork.Bookings.GetAllBookingsAsync();
+
+    public Task<int> DeleteBookingAsync(int id)
+        => _unitOfWork.Bookings.DeleteBookingAsync(id);
+
+    public async Task<BookingDetailsDto> GetBookingByIdAsync(int id)
+    {
+        var booking = await _unitOfWork.Bookings.GetBookingByIdAsync(id);
+        return _mapper.Map<BookingDetailsDto>(booking);
+    }
+
+    public Task<IEnumerable<BookingDetailsDto>> GetUpcomingBookingsAsync(int? userId = null)
+        => _unitOfWork.Bookings.GetUpcomingBookingsAsync(userId);
+
+    public async Task<bool> UpdateBookingAsync(BookingDetailsDto bookingDto)
+    {
+        var booking = _mapper.Map<Bookings>(bookingDto);
+        return await _unitOfWork.Bookings.UpdateBookingAsync(booking);
+    }
+
+    public async Task<bool> ApproveBookingAsync(int bookingId)
+    {
+        var booking = await _unitOfWork.Bookings.GetBookingByIdAsync(bookingId);
+        if (booking == null || booking.IsApproved) return false;
+
+        booking.IsApproved = true;
+        var updateResult = await _unitOfWork.Bookings.UpdateBookingAsync(booking);
+
+        if (updateResult)
         {
-            var allUpcomingBookings = await _bookingRepo.GetUpcomingBookingsAsync();
+            var user = await _unitOfWork.Users.GetByIdAsync(booking.UserId);
+            var slot = await _unitOfWork.Slots.GetByIdAsync(booking.SlotId);
 
-            var now = DateTime.UtcNow;
-            var inOneHour = now.AddHours(1);
-
-            var bookingsToRemind = allUpcomingBookings
-                .Where(b => b.StartTime > now && b.StartTime <= inOneHour && b.IsApproved)
-                .ToList();
-
-            foreach (var booking in bookingsToRemind)
+            var email = new MailRequestDto
             {
-                var user = await _userRepo.GetbyId(booking.UserId);
-                if (user == null) continue;
+                ToEmail = user.Email,
+                Subject = "Booking Approved - Tax Pros",
+                Body = $"Hello {user.FirstName},<br/><br/>Your booking for the slot from <b>{slot.StartTime:hh:mm tt}</b> to <b>{slot.EndTime:hh:mm tt}</b> has been approved.<br/><br/>Thank you,<br/>Tax Pros Team"
+            };
 
-                var email = new MailRequest
+            await _mailService.SendEmailAsync(email);
+        }
+
+        return updateResult;
+    }
+
+    public async Task SendRemainderEmailAsync()
+    {
+        var upcomingBookings = await _unitOfWork.Bookings.GetUpcomingBookingsAsync();
+
+        var now = DateTime.UtcNow;
+        var inOneHour = now.AddHours(1);
+
+        var bookingsToRemind = upcomingBookings
+            .Where(b => b.StartTime > now && b.StartTime <= inOneHour && b.IsApproved)
+            .ToList();
+
+        foreach (var booking in bookingsToRemind)
+        {
+            var user = await _unitOfWork.Users.GetByIdAsync(booking.UserId);
+            if (user == null) continue;
+
+            try
+            {
+                await _mailService.SendEmailAsync(new MailRequestDto
                 {
                     ToEmail = user.Email,
                     Subject = "Reminder: Upcoming Appointment",
                     Body = $@"
-                Hi {user.FirstName},<br/><br/>
-                This is a reminder for your upcoming booking scheduled at 
-                <b>{booking.StartTime:hh:mm tt}</b> to <b>{booking.EndTime:hh:mm tt}</b> today.<br/><br/>
-                Regards,<br/>Tax Pros Team"
-                };
-
-                try
-                {
-                    await _mailService.SendEmailAsync(email);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Failed to send reminder email to {user.Email}: {ex.Message}");
-                }
+                        Hi {user.FirstName},<br/><br/>
+                        This is a reminder for your upcoming booking scheduled at 
+                        <b>{booking.StartTime:hh:mm tt}</b> to <b>{booking.EndTime:hh:mm tt}</b> today.<br/><br/>
+                        Regards,<br/>Tax Pros Team"
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to send reminder to {user.Email}: {ex.Message}");
             }
         }
-
     }
 }

@@ -1,63 +1,59 @@
-﻿using ApptManager.Models;
-using ApptManager.Models.Data.WebApi.Models.Data;
-using ApptManager.Repo.Services;
+﻿using ApptManager.DTOs;
+using ApptManager.Mapper;
+using ApptManager.Models;
 using Dapper;
 using System.Data;
 
 namespace ApptManager.Repo
 {
-    public class SlotRepo : ISlotRepo
+    public class SlotRepo : GenericRepository<Slot>, ISlotRepo
     {
-        private readonly DapperDBContext _dbContext;
+        private readonly IDbConnection _db;
+        private readonly SlotMapper _mapper;
 
-        public SlotRepo(DapperDBContext dbContext)
+        public SlotRepo(IDbConnection db, SlotMapper mapper) : base(db)
         {
-            _dbContext = dbContext;
+            _db = db;
+            _mapper = mapper;
         }
 
-        public async Task<Slot> GetById(int id)
-        {
-            using var conn = _dbContext.CreateConnection();
-            var sql = "SELECT * FROM Slots WHERE Id = @Id";
-            return await conn.QueryFirstOrDefaultAsync<Slot>(sql, new { Id = id });
-        }
-
-        public async Task GenerateSlots(int taxProfessionalId, DateTime startTime, DateTime endTime)
+        public async Task GenerateSlots(SlotGenerationRequestDto slotGenerationRequestDto)
         {
             var slots = new List<Slot>();
+            var startTime = slotGenerationRequestDto.StartTime;
+            var endTime = slotGenerationRequestDto.EndTime;
 
             while (startTime < endTime)
             {
-                slots.Add(new Slot
+                var baseSlot = _mapper.ConvertSlotTOSlotGenerationRequestDto(slotGenerationRequestDto);
+
+                var slot = new Slot
                 {
-                    TaxProfessionalId = taxProfessionalId,
+                    TaxProfessionalId = baseSlot.TaxProfessionalId,
                     StartTime = startTime,
                     EndTime = startTime.AddHours(1),
                     IsBooked = false,
                     CreatedOn = DateTime.UtcNow
-                });
+                };
 
+                slots.Add(slot);
                 startTime = startTime.AddHours(1);
             }
-
-            using var connection = _dbContext.CreateConnection();
 
             foreach (var slot in slots)
             {
                 string query = @"
                     INSERT INTO Slots (TaxProfessionalId, StartTime, EndTime, IsBooked, CreatedOn)
                     VALUES (@TaxProfessionalId, @StartTime, @EndTime, @IsBooked, @CreatedOn)";
-                await connection.ExecuteAsync(query, slot);
+
+                await _db.ExecuteAsync(query, slot);
             }
         }
 
         public async Task<List<Slot>> GetSlotsByTaxPro(int taxProfessionalId)
         {
             string query = "SELECT * FROM Slots WHERE TaxProfessionalId = @TaxProfessionalId";
-
-            using var connection = _dbContext.CreateConnection();
-            var slots = await connection.QueryAsync<Slot>(query, new { TaxProfessionalId = taxProfessionalId });
-
+            var slots = await _db.QueryAsync<Slot>(query, new { TaxProfessionalId = taxProfessionalId });
             return slots.ToList();
         }
 
@@ -72,9 +68,7 @@ namespace ApptManager.Repo
                 WHERE Id = @Id";
 
             slot.UpdatedOn = DateTime.UtcNow;
-
-            using var connection = _dbContext.CreateConnection();
-            await connection.ExecuteAsync(query, slot);
+            await _db.ExecuteAsync(query, slot);
 
             return "Slot updated successfully.";
         }
@@ -82,19 +76,14 @@ namespace ApptManager.Repo
         public async Task<string> DeleteSlot(int id)
         {
             string query = "DELETE FROM Slots WHERE Id = @Id";
-
-            using var connection = _dbContext.CreateConnection();
-            await connection.ExecuteAsync(query, new { Id = id });
-
+            await _db.ExecuteAsync(query, new { Id = id });
             return "Slot deleted successfully.";
         }
 
+        // Optional custom method if you want a named version (redundant with GetByIdAsync from GenericRepo)
         public async Task<Slot> GetslotByIdAsync(int id)
         {
-            using var conn = _dbContext.CreateConnection();
-            var sql = "SELECT * FROM Slots WHERE Id = @Id";
-            return await conn.QueryFirstOrDefaultAsync<Slot>(sql, new { Id = id });
+            return await _db.QueryFirstOrDefaultAsync<Slot>("SELECT * FROM Slots WHERE Id = @Id", new { Id = id });
         }
-
     }
 }

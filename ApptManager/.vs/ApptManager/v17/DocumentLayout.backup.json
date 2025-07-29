@@ -1,134 +1,246 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\",
+  "WorkspaceRootPath": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\apptmanager.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\apptmanager.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApptManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\mailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\mailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\bookingdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\bookingdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\controllers\\slotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\slotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\controllers\\taxprofessionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\taxprofessionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\userobj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\userobj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\slotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\slotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\slotgenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\slotgenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\taxprofessionals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\taxprofessionals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\taxprofessionalrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\taxprofessionalrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\taxprofessionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\taxprofessionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\taxprofessionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\data\\dapperdbcontextcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\data\\dapperdbcontextcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\mapper\\slotmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\mapper\\slotmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\apptmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\apptmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\taxprofessionaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\taxprofessionaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\log\\log20250728.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\log\\log20250728.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\automapperfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\automapperfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\controllers\\taxprofessionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\taxprofessionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\itaxprofessionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\itaxprofessionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\repo\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\createbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\appointment-manager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appointment-manager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\controllers\\slotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\controllers\\slotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\islotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\islotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\slotupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\slotupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\createtaxprofessionaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\createtaxprofessionaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\refreshtokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\refreshtokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\bookingdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\bookingdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\createbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\createbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\users\\lekhy\\source\\repos\\apptmanager\\apptmanager\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\slotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\slotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\slotgenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\slotgenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\taxprofessionals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\taxprofessionals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\slotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\slotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\taxprofessionalrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\taxprofessionalrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\itaxprofessionalrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\itaxprofessionalrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\apptmanager.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\apptmanager.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\models\\mailrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\models\\mailrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\repo\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\repo\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\appointment-manager\\obj\\release\\net8.0\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appointment-manager\\obj\\release\\net8.0\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\appointment-manager\\obj\\debug\\net8.0\\apptmanager.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appointment-manager\\obj\\debug\\net8.0\\apptmanager.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|c:\\onedrive - h\u0026r block ltd\\documents\\myproject\\myproject\\apptmanager\\apptmanager\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9920FCDB-8474-48D4-9258-666616BFBE32}|ApptManager\\ApptManager.csproj|solutionrelative:apptmanager\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -137,410 +249,743 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 564,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 374,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApptManager.http",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\ApptManager.http",
-              "RelativeDocumentMoniker": "ApptManager\\ApptManager.http",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\ApptManager.http",
-              "RelativeToolTip": "ApptManager\\ApptManager.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-07-14T17:07:00.565Z",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\UserService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\UserService.cs*",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\UserService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T10:07:30.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Controllers\\BookingController.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "ApptManager\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ApptManager\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\UnitOfWork\\UnitOfWork.cs*",
+              "RelativeToolTip": "ApptManager\\UnitOfWork\\UnitOfWork.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T14:36:06.879Z"
+              "WhenOpened": "2025-07-29T18:06:19.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\MailRequest.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\MailRequest.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\MailRequest.cs",
-              "RelativeToolTip": "ApptManager\\Models\\MailRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:34:36.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Program.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Program.cs",
               "RelativeDocumentMoniker": "ApptManager\\Program.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Program.cs",
-              "RelativeToolTip": "ApptManager\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAsAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Program.cs*",
+              "RelativeToolTip": "ApptManager\\Program.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T13:44:18.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\UserService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\UserService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwE0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SlotService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\SlotService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\SlotService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\SlotService.cs*",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\SlotService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T10:07:30.942Z"
+              "WhenOpened": "2025-07-25T07:01:25.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\appsettings.json",
-              "RelativeDocumentMoniker": "ApptManager\\appsettings.json",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\appsettings.json",
-              "RelativeToolTip": "ApptManager\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-06T14:10:51.24Z"
+              "DocumentIndex": 1,
+              "Title": "TaxProfessionalService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\TaxProfessionalService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\TaxProfessionalService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\TaxProfessionalService.cs*",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\TaxProfessionalService.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T14:52:13.411Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ApptManager\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\BookingService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\BookingService.cs*",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\BookingService.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:40:40.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\MailSettings.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\MailSettings.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\MailSettings.cs",
-              "RelativeToolTip": "ApptManager\\Models\\MailSettings.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:36:59.093Z"
+              "WhenOpened": "2025-06-15T14:50:28.703Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MailService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\MailService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\MailService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\MailService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\MailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "ApptManager\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\UnitOfWork\\IUnitOfWork.cs*",
+              "RelativeToolTip": "ApptManager\\UnitOfWork\\IUnitOfWork.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:17:42.922Z"
+              "WhenOpened": "2025-07-29T18:09:10.906Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "ApptManager\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\appsettings.Development.json",
-              "RelativeToolTip": "ApptManager\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-14T14:47:09.132Z",
+              "DocumentIndex": 9,
+              "Title": "ApptManager.csproj",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\ApptManager.csproj",
+              "RelativeDocumentMoniker": "ApptManager\\ApptManager.csproj",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\ApptManager.csproj*",
+              "RelativeToolTip": "ApptManager\\ApptManager.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-24T07:30:10.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TaxProfessionalDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\TaxProfessionalDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\TaxProfessionalDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\TaxProfessionalDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\TaxProfessionalDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:19:57.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ApptManager\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAqwHYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T10:40:40.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SlotMapper.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Mapper\\SlotMapper.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Mapper\\SlotMapper.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Mapper\\SlotMapper.cs",
+              "RelativeToolTip": "ApptManager\\Mapper\\SlotMapper.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T05:09:20.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DapperDBContextcs.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\Data\\DapperDBContextcs.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\Data\\DapperDBContextcs.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\Data\\DapperDBContextcs.cs",
+              "RelativeToolTip": "ApptManager\\Models\\Data\\DapperDBContextcs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:32:52.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AutoMapperFile.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\AutoMapperFile.cs",
+              "RelativeDocumentMoniker": "ApptManager\\AutoMapperFile.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\AutoMapperFile.cs",
+              "RelativeToolTip": "ApptManager\\AutoMapperFile.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:21:27.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "log20250728.txt",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\log\\log20250728.txt",
+              "RelativeDocumentMoniker": "ApptManager\\log\\log20250728.txt",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\log\\log20250728.txt",
+              "RelativeToolTip": "ApptManager\\log\\log20250728.txt",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-29T17:50:32.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TaxProfessionalController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\TaxProfessionalController.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Controllers\\TaxProfessionalController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\TaxProfessionalController.cs",
+              "RelativeToolTip": "ApptManager\\Controllers\\TaxProfessionalController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA8wD8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T14:54:30.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "TaxProfessionalController.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\TaxProfessionalController.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Controllers\\TaxProfessionalController.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\TaxProfessionalController.cs",
-              "RelativeToolTip": "ApptManager\\Controllers\\TaxProfessionalController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "ITaxProfessionalService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\ITaxProfessionalService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\ITaxProfessionalService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\ITaxProfessionalService.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\ITaxProfessionalService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAEwAwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:54:30.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\UserRepo.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\UserRepo.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\UserRepo.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\UserRepo.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T14:55:08.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\IUserService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T10:06:07.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BookingDetailsDto.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\BookingDetailsDto.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\BookingDetailsDto.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\BookingDetailsDto.cs",
-              "RelativeToolTip": "ApptManager\\Models\\BookingDetailsDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:59:41.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SlotController.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\SlotController.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Controllers\\SlotController.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Controllers\\SlotController.cs",
-              "RelativeToolTip": "ApptManager\\Controllers\\SlotController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:02:16.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SlotGenerationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\SlotGenerationRequest.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\SlotGenerationRequest.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\SlotGenerationRequest.cs",
-              "RelativeToolTip": "ApptManager\\Models\\SlotGenerationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T17:03:23.873Z"
+              "WhenOpened": "2025-07-28T04:55:56.896Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "BookingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\BookingRepo.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\BookingRepo.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\BookingRepo.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\BookingRepo.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAMBdwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T14:33:41.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserObj.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\UserObj.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\UserObj.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\UserObj.cs",
-              "RelativeToolTip": "ApptManager\\Models\\UserObj.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:09:51.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SlotRepo.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\SlotRepo.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\SlotRepo.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\SlotRepo.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\SlotRepo.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAowGMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T08:44:23.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\JwtTokenService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\JwtTokenService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\JwtTokenService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\JwtTokenService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T08:15:33.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TaxProfessionals.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\TaxProfessionals.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\TaxProfessionals.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\TaxProfessionals.cs",
-              "RelativeToolTip": "ApptManager\\Models\\TaxProfessionals.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T15:16:07.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\BookingService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\BookingService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\BookingService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\BookingService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T14:50:28.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Slot.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\Slot.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\Slot.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\Slot.cs",
-              "RelativeToolTip": "ApptManager\\Models\\Slot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T08:40:23.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TaxProfessionalRepo.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\TaxProfessionalRepo.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\TaxProfessionalRepo.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\TaxProfessionalRepo.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\TaxProfessionalRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:20:50.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IBookingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\IBookingRepo.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\IBookingRepo.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\IBookingRepo.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\IBookingRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T14:32:50.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TaxProfessionalService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\TaxProfessionalService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\TaxProfessionalService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\TaxProfessionalService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\TaxProfessionalService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:52:13.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ISlotService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\ISlotService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\ISlotService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\ISlotService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\ISlotService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:29:06.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "IBookingService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\IBookingService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\IBookingService.cs",
               "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\IBookingService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\IBookingService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\IBookingService.cs",
               "RelativeToolTip": "ApptManager\\Repo\\Services\\IBookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T14:49:48.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IMailService.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\IMailService.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\IMailService.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Repo\\Services\\IMailService.cs",
-              "RelativeToolTip": "ApptManager\\Repo\\Services\\IMailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\UpdateUserDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\UpdateUserDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:34:45.828Z"
+              "WhenOpened": "2025-07-29T05:40:46.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "ApptManager\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAiwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:36:06.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\BookingRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\BookingRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\BookingRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\BookingRepo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:33:41.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IBookingRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\IBookingRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\IBookingRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\IBookingRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\IBookingRepo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:32:50.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Appointment-Manager\\Program.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Appointment-Manager\\Program.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Appointment-Manager\\Program.cs",
+              "RelativeToolTip": "ApptManager\\Appointment-Manager\\Program.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAhwBAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T05:26:42.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SlotController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\SlotController.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Controllers\\SlotController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Controllers\\SlotController.cs",
+              "RelativeToolTip": "ApptManager\\Controllers\\SlotController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAEwDEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T09:02:16.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ISlotService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\ISlotService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\ISlotService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\ISlotService.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\ISlotService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:29:06.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ISlotRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\ISlotRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\ISlotRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\ISlotRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\ISlotRepo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T16:38:09.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\IUserService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\IUserService.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIAwwAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T10:06:07.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SlotUpdateDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\SlotUpdateDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\SlotUpdateDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\SlotUpdateDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\SlotUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:12:10.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateTaxProfessionalDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\CreateTaxProfessionalDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\CreateTaxProfessionalDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\CreateTaxProfessionalDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\CreateTaxProfessionalDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:05:51.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\UserResponseDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\UserResponseDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\UserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:35:05.265Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
+              "Title": "RefreshTokenResponseDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\RefreshTokenResponseDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\RefreshTokenResponseDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\RefreshTokenResponseDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\RefreshTokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:23:20.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BookingDetailsDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\BookingDetailsDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\BookingDetailsDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\BookingDetailsDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\BookingDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T12:59:41.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\CreateUserDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\CreateUserDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:17:33.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "CreateBookingDto.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\CreateBookingDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\CreateBookingDto.cs",
               "RelativeDocumentMoniker": "ApptManager\\Models\\CreateBookingDto.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\CreateBookingDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\CreateBookingDto.cs",
               "RelativeToolTip": "ApptManager\\Models\\CreateBookingDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T08:35:19.228Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Bookings.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\Bookings.cs",
-              "RelativeDocumentMoniker": "ApptManager\\Models\\Bookings.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\Models\\Bookings.cs",
-              "RelativeToolTip": "ApptManager\\Models\\Bookings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T14:22:17.525Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 137,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-07-29T04:41:21.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "DocumentMoniker": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "RelativeDocumentMoniker": "ApptManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "ToolTip": "C:\\Users\\lekhy\\source\\repos\\ApptManager\\ApptManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "RelativeToolTip": "ApptManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "SlotDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\SlotDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\SlotDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\SlotDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\SlotDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T16:59:40.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T05:18:29.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\UserDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\UserDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:16:40.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\LoginRequestDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\LoginRequestDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T16:40:34.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\LoginResponseDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\LoginResponseDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T16:40:35.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SlotGenerationRequest.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\SlotGenerationRequest.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\SlotGenerationRequest.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\SlotGenerationRequest.cs",
+              "RelativeToolTip": "ApptManager\\Models\\SlotGenerationRequest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T17:03:23.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Bookings.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\Bookings.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\Bookings.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\Bookings.cs",
+              "RelativeToolTip": "ApptManager\\Models\\Bookings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:22:17.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TaxProfessionals.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\TaxProfessionals.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\TaxProfessionals.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\TaxProfessionals.cs",
+              "RelativeToolTip": "ApptManager\\Models\\TaxProfessionals.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T15:16:07.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\User.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\User.cs",
+              "RelativeToolTip": "ApptManager\\Models\\User.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T05:09:51.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Slot.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\Slot.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\Slot.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\Slot.cs",
+              "RelativeToolTip": "ApptManager\\Models\\Slot.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:40:23.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\JwtTokenService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwBAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:15:33.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MailService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\MailService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\MailService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\MailService.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\MailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T11:17:42.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\UserRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\UserRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\UserRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\UserRepo.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T14:55:08.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IUserRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\IUserRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\IUserRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\IUserRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\IUserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T05:13:02.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "MailSettings.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\MailSettings.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\MailSettings.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\MailSettings.cs",
+              "RelativeToolTip": "ApptManager\\Models\\MailSettings.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T10:36:59.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "GenericRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\GenericRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\GenericRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\GenericRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\GenericRepo.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:08:39.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\appsettings.json",
+              "RelativeDocumentMoniker": "ApptManager\\appsettings.json",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\appsettings.json",
+              "RelativeToolTip": "ApptManager\\appsettings.json",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvzQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-06T14:10:51.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IGenericRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\IGenericRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\IGenericRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\IGenericRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\IGenericRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:09:20.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SlotRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\SlotRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\SlotRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\SlotRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\SlotRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:44:23.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "TaxProfessionalRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\TaxProfessionalRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\TaxProfessionalRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\TaxProfessionalRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\TaxProfessionalRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:20:50.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ITaxProfessionalRepo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\ITaxProfessionalRepo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\ITaxProfessionalRepo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\ITaxProfessionalRepo.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\ITaxProfessionalRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:06:12.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ApptManager.http",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\ApptManager.http",
+              "RelativeDocumentMoniker": "ApptManager\\ApptManager.http",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\ApptManager.http",
+              "RelativeToolTip": "ApptManager\\ApptManager.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-07-14T17:07:00.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "MailRequestDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\MailRequestDto.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Models\\MailRequestDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Models\\MailRequestDto.cs",
+              "RelativeToolTip": "ApptManager\\Models\\MailRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T10:34:36.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IMailService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\IMailService.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Repo\\Services\\IMailService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Repo\\Services\\IMailService.cs",
+              "RelativeToolTip": "ApptManager\\Repo\\Services\\IMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T10:34:45.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Appointment-Manager\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Appointment-Manager\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Appointment-Manager\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "ApptManager\\Appointment-Manager\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T11:08:41.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ApptManager.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Appointment-Manager\\obj\\Debug\\net8.0\\ApptManager.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ApptManager\\Appointment-Manager\\obj\\Debug\\net8.0\\ApptManager.AssemblyInfo.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\Appointment-Manager\\obj\\Debug\\net8.0\\ApptManager.AssemblyInfo.cs",
+              "RelativeToolTip": "ApptManager\\Appointment-Manager\\obj\\Debug\\net8.0\\ApptManager.AssemblyInfo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T07:27:37.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ApptManager\\appsettings.Development.json",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Documents\\MyProject\\MyProject\\ApptManager\\ApptManager\\appsettings.Development.json",
+              "RelativeToolTip": "ApptManager\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-14T14:47:09.132Z"
             }
           ]
         }

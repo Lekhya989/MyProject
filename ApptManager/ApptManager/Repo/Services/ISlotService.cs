@@ -1,16 +1,17 @@
-﻿using ApptManager.Models;
+﻿using ApptManager.DTOs;
+using ApptManager.Models;
 
 namespace ApptManager.Services
 {
    
         public interface ISlotService
         {
-            Task GenerateSlots(int taxProfessionalId, DateTime start, DateTime end);
-            Task<List<Slot>> GetSlotsByTaxPro(int taxProfessionalId);
-            Task<string> UpdateSlot(Slot slot);
+        Task GenerateSlots(SlotGenerationRequestDto slotGenerationRequestDto);
+        Task<List<SlotDto>> GetSlotsByTaxPro(int taxProfessionalId);
+            Task<string> UpdateSlot(int id, SlotUpdateDto slotUpdateDto);
             Task<string> DeleteSlot(int id);
 
-            Task<Slot> GetSlotByIdAsync(int slotId);
+            Task<SlotDto> GetSlotByIdAsync(int slotId);
         }
     
 }

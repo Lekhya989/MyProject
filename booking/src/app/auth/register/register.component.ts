@@ -29,7 +29,7 @@ export class RegisterComponent implements OnDestroy {
       lastName: fb.control('', [Validators.required]),
       email: fb.control('', [Validators.required, Validators.email]),
       mobileNumber: fb.control('', [Validators.required]),
-      userType: fb.control('USER',[Validators.required]),
+      userType: fb.control('ADMIN',[Validators.required]),
       password: fb.control('', [Validators.required]),
       cpassword: fb.control('', [Validators.required]),
     });
@@ -48,7 +48,7 @@ export class RegisterComponent implements OnDestroy {
         next: (res) => {
           console.log("res...", res);
           this.snackBar.open('Registered Successfully', 'Close', { duration: 3000 });
-          this.route.navigateByUrl('/dashboard');
+          this.route.navigateByUrl('/login');
         },
         
       });

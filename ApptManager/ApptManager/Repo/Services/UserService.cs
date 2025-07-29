@@ -1,78 +1,85 @@
-﻿using ApptManager.Models;
+﻿using ApptManager.DTOs;
+using ApptManager.Models;
 using ApptManager.Repo;
 using ApptManager.Repo.Services;
+using ApptManager.UnitOfWork;
+using AutoMapper;
 
 namespace ApptManager.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepo _userRepo;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMailService _mailService;
+        private readonly IMapper _mapper;
 
-        public UserService(IUserRepo userRepo, IMailService mailService)
+        public UserService(IUnitOfWork unitOfWork, IMailService mailService, IMapper mapper)
         {
-            _userRepo = userRepo;
+            _unitOfWork = unitOfWork;
             _mailService = mailService;
+            _mapper = mapper;
         }
 
-        public async Task<string> Create(UserObj user)
+        public async Task<string> Create(CreateUserDto dto)
         {
-            var result = await _userRepo.Create(user);
+            var user = _mapper.Map<User>(dto);
+
+            var result = await _unitOfWork.Users.Create(user);
 
             if (result == "Thank you for registering.")
             {
-                Console.WriteLine("I am here");
                 try
                 {
-                    var subject = "Registration Successful - Tax Pros";
-                    var body = $"Hello {user.FirstName},<br/><br/>" +
-                               $"Thank you for registering with <b>Tax Pros</b>!<br/><br/>" +
-                               $"Regards,<br/>Tax Pros Team";
-
-                    var mailRequest = new MailRequest
+                    var mailRequest = new MailRequestDto
                     {
                         ToEmail = user.Email,
-                        Subject = subject,
-                        Body = body
+                        Subject = "Registration Successful - Tax Pros",
+                        Body = $"Hello {user.FirstName},<br/><br/>" +
+                               $"Thank you for registering with <b>Tax Pros</b>!<br/><br/>" +
+                               $"Regards,<br/>Tax Pros Team"
                     };
-
                     await _mailService.SendEmailAsync(mailRequest);
-
-                    Console.WriteLine($"Email sent to {user.Email}");
                 }
-                catch (Exception ex)
+                catch
                 {
-                    Console.WriteLine($"Failed to send registration email: {ex.Message}");
-                    // Email sending failed — continue without failing the registration
+                    // Swallow email errors
                 }
             }
 
             return result;
         }
 
-        public Task<List<UserObj>> GetAll()
+        public async Task<List<UserResponseDto>> GetAll()
         {
-            return _userRepo.GetAll();
+            var users = await _unitOfWork.Users.GetAllAsync();
+            return _mapper.Map<List<UserResponseDto>>(users);
         }
 
-        public Task<UserObj> GetbyId(int Id)
+        public async Task<UserResponseDto?> GetById(int id)
         {
-            return _userRepo.GetbyId(Id);
+            var user = await _unitOfWork.Users.GetByIdAsync(id);
+            return user == null ? null : _mapper.Map<UserResponseDto>(user);
         }
 
-        public Task<string> Remove(int Id)
+        public async Task<string> Update(UpdateUserDto dto, int id)
         {
-            return _userRepo.Remove(Id);
+            var user = await _unitOfWork.Users.GetByIdAsync(id);
+            if (user == null)
+                return "User not found.";
+
+            _mapper.Map(dto, user); // Apply updated fields
+            return await _unitOfWork.Users.Update(user, id);
         }
 
-        public Task<string> Update(UserObj user, int Id)
+        public async Task<string> Remove(int id)
         {
-            return _userRepo.Update(user, Id);
+            var rows = await _unitOfWork.Users.DeleteAsync(id);
+            return rows > 0
+                ? "User deleted successfully."
+                : "No user found to delete.";
         }
 
-        public Task<UserObj> GetByEmail(string email)
-        {
-            return _userRepo.GetByEmail(email);
-        }
+        public async Task<User?> GetByEmail(string email)
+            => await _unitOfWork.Users.GetByEmail(email); // Used for login only (entity needed)
     }
 }

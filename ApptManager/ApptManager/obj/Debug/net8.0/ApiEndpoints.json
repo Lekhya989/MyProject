@@ -129,7 +129,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ApptManager.Models.SlotGenerationRequest",
+        "Type": "ApptManager.DTOs.SlotGenerationRequestDto",
         "IsRequired": true
       }
     ],
@@ -149,8 +149,8 @@
         "IsRequired": true
       },
       {
-        "Name": "slot",
-        "Type": "ApptManager.Models.Slot",
+        "Name": "dto",
+        "Type": "ApptManager.DTOs.SlotUpdateDto",
         "IsRequired": true
       }
     ],
@@ -165,8 +165,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "taxPro",
-        "Type": "ApptManager.Models.TaxProfessional",
+        "Name": "dto",
+        "Type": "ApptManager.DTOs.CreateTaxProfessionalDto",
         "IsRequired": true
       }
     ],
@@ -228,8 +228,8 @@
         "IsRequired": true
       },
       {
-        "Name": "taxPro",
-        "Type": "ApptManager.Models.TaxProfessional",
+        "Name": "dto",
+        "Type": "ApptManager.DTOs.CreateTaxProfessionalDto",
         "IsRequired": true
       }
     ],
@@ -244,8 +244,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "ApptManager.Models.UserObj",
+        "Name": "dto",
+        "Type": "ApptManager.DTOs.CreateUserDto",
         "IsRequired": true
       }
     ],
@@ -263,14 +263,14 @@
   },
   {
     "ContainingType": "ApptManager.Controllers.UserController",
-    "Method": "GetbyCode",
-    "RelativePath": "api/User/GetbyCode/{Id}",
+    "Method": "GetById",
+    "RelativePath": "api/User/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -287,7 +287,33 @@
     "Parameters": [
       {
         "Name": "loginRequest",
-        "Type": "ApptManager.Models.LoginRequest",
+        "Type": "ApptManager.DTOs.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApptManager.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/User/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApptManager.Controllers.UserController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/User/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApptManager.DTOs.RefreshTokenRequestDto",
         "IsRequired": true
       }
     ],
@@ -296,23 +322,23 @@
   {
     "ContainingType": "ApptManager.Controllers.UserController",
     "Method": "Remove",
-    "RelativePath": "api/User/Remove",
+    "RelativePath": "api/User/Remove/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "ApptManager.Controllers.UserController",
-    "Method": "TestEmail",
-    "RelativePath": "api/User/test-email",
+    "Method": "TestMail",
+    "RelativePath": "api/User/TestMail",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -322,20 +348,20 @@
   {
     "ContainingType": "ApptManager.Controllers.UserController",
     "Method": "Update",
-    "RelativePath": "api/User/Update",
+    "RelativePath": "api/User/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "ApptManager.Models.UserObj",
+        "Name": "dto",
+        "Type": "ApptManager.DTOs.UpdateUserDto",
         "IsRequired": true
       },
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
