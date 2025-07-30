@@ -30,27 +30,32 @@ export class LoginComponent {
     });
   }
 
-    login() {
+   login() {
   if (this.loginForm.valid) {
     const loginInfo = this.loginForm.value;
- 
+
     this.apiService.loginUser(loginInfo).subscribe({
-      next: (res:any) => {
-        localStorage.setItem('token', res.token);
-        console.log(jwtDecode(res.token));
-        const role = this.getUserRoleFromToken(res.token);
-        this.snackBar.open('Login successful!', 'Close', { duration: 3000 });
-        if (role === 'ADMIN'){
-          this.router.navigate(['/admin']);
-        }
-        else if (role === 'USER'){
-          this.router.navigate(['/dashboard']);
-        }
-        else{
-          this.snackBar.open('Unknown role. Redirect to login.','Close',{duration: 3000});
+      next: (res: any) => {
+        const token = res.accessToken; // ✅ fix this
+        if (typeof token === 'string' && token.trim() !== '') {
+          localStorage.setItem('token', token);
+          console.log(jwtDecode(token));
+          const role = this.getUserRoleFromToken(token);
+
+          this.snackBar.open('Login successful!', 'Close', { duration: 3000 });
+
+          if (role === 'ADMIN') {
+            this.router.navigate(['/admin']);
+          } else if (role === 'USER') {
+            this.router.navigate(['/dashboard']);
+          } else {
+            this.snackBar.open('Unknown role. Redirect to login.', 'Close', { duration: 3000 });
+          }
+        } else {
+          this.snackBar.open('Login failed. Invalid token received.', 'Close', { duration: 3000 });
         }
       },
-      error: (err:any) => {
+      error: (err: any) => {
         this.snackBar.open('Invalid credentials. Please try again.', 'Close', { duration: 3000 });
         console.error(err);
       }

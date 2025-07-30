@@ -70,20 +70,12 @@ namespace ApptManager.Controllers
             var userDto = _mapper.Map<UserResponseDto>(user);
             var slotDto = _mapper.Map<SlotDto>(slot);
 
-            try
-            {
-                var result = await _bookingService.CreateBookingAsync(dto, userDto, slotDto);
-                Log.Information("Created bookings");
+            var result = await _bookingService.CreateBookingAsync(dto, userDto, slotDto);
+            Log.Information("Created bookings");
 
-                return result > 0
-                    ? Ok(new { message = "Booking successful" })
-                    : StatusCode(500, "Booking failed");
-            }
-            catch (Exception ex)
-            {
-                Log.Error("Booking error: {Message}", ex.Message);
-                return StatusCode(500, "Booking failed: " + ex.Message);
-            }
+            return result>0
+                ? Ok(new {message="Booking Successful"})
+                : StatusCode(500,"Booking failed");
         }
 
 

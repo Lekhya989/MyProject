@@ -1,5 +1,6 @@
 ﻿using ApptManager.Mapper;
 using ApptManager.Mapping;
+using ApptManager.Middleware;
 using ApptManager.Models;
 using ApptManager.Models.Data.WebApi.Models.Data;
 using ApptManager.Repo;
@@ -57,6 +58,8 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddTransient<JwtTokenService>();
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<RefreshTokenService>();
+
 
 // 🔹 Swagger (only in dev)
 builder.Services.AddEndpointsApiExplorer();
@@ -101,18 +104,8 @@ if (app.Environment.IsDevelopment())
 }
 
 // 🔹 Global Exception Handling
-app.UseExceptionHandler(errorApp =>
-{
-    errorApp.Run(async context =>
-    {
-        var exceptionHandlerFeature = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
-        var exception = exceptionHandlerFeature?.Error;
+app.UseMiddleware<ExceptionMiddleware>(); // Global exception handler
 
-        Log.Error(exception, "Unhandled exception occurred");
-        context.Response.StatusCode = 500;
-        await context.Response.WriteAsync("An unexpected error occurred.");
-    });
-});
 
 app.UseHttpsRedirection();
 app.UseCookiePolicy(new CookiePolicyOptions

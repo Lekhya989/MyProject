@@ -20,3 +20,354 @@
 2025-07-30 00:11:01.080 +05:30 [INF] Executed action ApptManager.Controllers.UserController.GetAll (ApptManager) in 382.1502ms
 2025-07-30 00:11:01.080 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.GetAll (ApptManager)'
 2025-07-30 00:11:01.082 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/GetAll - 200 null application/json; charset=utf-8 437.7732ms
+2025-07-30 10:17:01.975 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 10:17:02.333 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 10:17:02.333 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 10:17:02.532 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 10:17:02.532 +05:30 [INF] Hosting environment: Development
+2025-07-30 10:17:02.532 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 10:18:26.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/index.html - null null
+2025-07-30 10:18:26.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/index.html - 200 null text/html;charset=utf-8 306.5541ms
+2025-07-30 10:18:27.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_vs/browserLink - null null
+2025-07-30 10:18:27.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-30 10:18:27.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 21.8204ms
+2025-07-30 10:18:27.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.0389ms
+2025-07-30 10:18:27.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - null null
+2025-07-30 10:18:27.142 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.7961ms
+2025-07-30 10:18:37.750 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/User/GetAll - null null
+2025-07-30 10:18:37.817 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.GetAll (ApptManager)'
+2025-07-30 10:18:37.840 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:18:38.503 +05:30 [INF] Fetched all users
+2025-07-30 10:18:38.515 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.DTOs.UserResponseDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 10:18:38.525 +05:30 [INF] Executed action ApptManager.Controllers.UserController.GetAll (ApptManager) in 681.3085ms
+2025-07-30 10:18:38.526 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.GetAll (ApptManager)'
+2025-07-30 10:18:38.529 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/GetAll - 200 null application/json; charset=utf-8 779.3407ms
+2025-07-30 10:18:51.830 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/refresh-token - application/json 97
+2025-07-30 10:18:51.843 +05:30 [INF] CORS policy execution failed.
+2025-07-30 10:18:51.844 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 10:18:51.847 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 10:18:51.854 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RefreshToken(ApptManager.DTOs.RefreshTokenRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:18:51.881 +05:30 [WRN] Invalid user ID.
+2025-07-30 10:18:51.882 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-07-30 10:18:51.883 +05:30 [INF] Executed action ApptManager.Controllers.UserController.RefreshToken (ApptManager) in 27.929ms
+2025-07-30 10:18:51.883 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 10:18:51.883 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/refresh-token - 401 null text/plain; charset=utf-8 52.6965ms
+2025-07-30 10:19:02.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/User/TestMail - null null
+2025-07-30 10:19:02.553 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.TestMail (ApptManager)'
+2025-07-30 10:19:02.557 +05:30 [INF] Route matched with {action = "TestMail", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TestMail() on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:19:06.016 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-07-30 10:19:06.017 +05:30 [INF] Executed action ApptManager.Controllers.UserController.TestMail (ApptManager) in 3459.3925ms
+2025-07-30 10:19:06.017 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.TestMail (ApptManager)'
+2025-07-30 10:19:06.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/TestMail - 500 null text/plain; charset=utf-8 3467.9536ms
+2025-07-30 10:19:29.845 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7078/api/User/Remove/5 - null null
+2025-07-30 10:19:29.846 +05:30 [INF] CORS policy execution failed.
+2025-07-30 10:19:29.846 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 10:19:29.847 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Remove (ApptManager)'
+2025-07-30 10:19:29.856 +05:30 [INF] Route matched with {action = "Remove", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(Int32) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:19:29.929 +05:30 [INF] user removed
+2025-07-30 10:19:29.930 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 10:19:29.933 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Remove (ApptManager) in 77.2926ms
+2025-07-30 10:19:29.933 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Remove (ApptManager)'
+2025-07-30 10:19:29.933 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7078/api/User/Remove/5 - 200 null application/json; charset=utf-8 88.2982ms
+2025-07-30 10:23:33.979 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/Login - application/json 67
+2025-07-30 10:23:33.984 +05:30 [INF] CORS policy execution failed.
+2025-07-30 10:23:33.984 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 10:23:33.984 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 10:23:33.993 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ApptManager.DTOs.LoginRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:23:34.342 +05:30 [INF] User logged in and tokens issued.
+2025-07-30 10:23:34.343 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 10:23:34.344 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Login (ApptManager) in 351.5725ms
+2025-07-30 10:23:34.345 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 10:23:34.345 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/Login - 200 null application/json; charset=utf-8 368.7131ms
+2025-07-30 10:23:57.505 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/refresh-token - application/json 97
+2025-07-30 10:23:57.505 +05:30 [INF] CORS policy execution failed.
+2025-07-30 10:23:57.505 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 10:23:57.506 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 10:23:57.507 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RefreshToken(ApptManager.DTOs.RefreshTokenRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:23:57.509 +05:30 [WRN] Invalid user ID.
+2025-07-30 10:23:57.510 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-07-30 10:23:57.510 +05:30 [INF] Executed action ApptManager.Controllers.UserController.RefreshToken (ApptManager) in 2.9588ms
+2025-07-30 10:23:57.510 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 10:23:57.510 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/refresh-token - 401 null text/plain; charset=utf-8 5.4729ms
+2025-07-30 10:36:19.372 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 10:36:19.618 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 10:36:19.619 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 10:36:19.706 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 10:36:19.712 +05:30 [INF] Hosting environment: Development
+2025-07-30 10:36:19.712 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 10:36:19.785 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/index.html - null null
+2025-07-30 10:36:19.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/index.html - 200 null text/html;charset=utf-8 191.1114ms
+2025-07-30 10:36:19.975 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-30 10:36:19.975 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_vs/browserLink - null null
+2025-07-30 10:36:19.982 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.0937ms
+2025-07-30 10:36:20.013 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1552ms
+2025-07-30 10:36:20.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - null null
+2025-07-30 10:36:20.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/favicon-32x32.png - null null
+2025-07-30 10:36:20.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.2041ms
+2025-07-30 10:36:20.136 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-30 10:36:20.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/favicon-32x32.png - 200 628 image/png 11.9975ms
+2025-07-30 10:36:27.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/User/test-exception - null null
+2025-07-30 10:36:27.569 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.TestException (ApptManager)'
+2025-07-30 10:36:27.585 +05:30 [INF] Route matched with {action = "TestException", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestException() on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 10:37:02.014 +05:30 [INF] Executed action ApptManager.Controllers.UserController.TestException (ApptManager) in 34418.892ms
+2025-07-30 10:37:02.017 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.TestException (ApptManager)'
+2025-07-30 10:37:02.031 +05:30 [ERR] An unhandled exception occurred.
+System.Exception: This is a test exception.
+   at ApptManager.Controllers.UserController.TestException() in C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager\Controllers\UserController.cs:line 187
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ApptManager.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager\GlobalException\ExceptionMiddleware.cs:line 24
+2025-07-30 10:37:02.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/test-exception - 500 null application/json 34567.1611ms
+2025-07-30 10:39:03.726 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 10:39:04.019 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 10:39:04.020 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 10:39:04.110 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 10:39:04.111 +05:30 [INF] Hosting environment: Development
+2025-07-30 10:39:04.111 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 11:01:38.807 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 11:01:39.036 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 11:01:39.037 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 11:01:39.102 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 11:01:39.103 +05:30 [INF] Hosting environment: Development
+2025-07-30 11:01:39.103 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 11:01:39.243 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/index.html - null null
+2025-07-30 11:01:39.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_vs/browserLink - null null
+2025-07-30 11:01:39.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-30 11:01:39.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/index.html - 200 null text/html;charset=utf-8 224.3409ms
+2025-07-30 11:01:39.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.628ms
+2025-07-30 11:01:39.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.0356ms
+2025-07-30 11:01:39.698 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - null null
+2025-07-30 11:01:39.713 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.3398ms
+2025-07-30 11:01:48.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/api/User/TestMail - null null
+2025-07-30 11:01:48.252 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.TestMail (ApptManager)'
+2025-07-30 11:01:48.272 +05:30 [INF] Route matched with {action = "TestMail", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TestMail() on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 11:01:52.102 +05:30 [INF] Executed action ApptManager.Controllers.UserController.TestMail (ApptManager) in 3826.6861ms
+2025-07-30 11:01:52.103 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.TestMail (ApptManager)'
+2025-07-30 11:01:52.144 +05:30 [ERR] An unhandled exception occurred.
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-31f63df9dcbsm835505a91.26 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-31f63df9dcbsm835505a91.26 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at ApptManager.Repo.Services.MailService.SendEmailAsync(MailRequestDto mailRequest) in C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager\Repo\Services\MailService.cs:line 36
+   at ApptManager.Controllers.UserController.TestMail() in C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager\Controllers\UserController.cs:line 134
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ApptManager.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager\GlobalException\ExceptionMiddleware.cs:line 24
+2025-07-30 11:01:52.192 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/api/User/TestMail - 500 null application/json 3999.3939ms
+2025-07-30 12:28:16.505 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 12:28:16.739 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 12:28:16.740 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 12:28:16.810 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 12:28:16.811 +05:30 [INF] Hosting environment: Development
+2025-07-30 12:28:16.811 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 12:28:19.256 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/index.html - null null
+2025-07-30 12:28:19.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/index.html - 200 null text/html;charset=utf-8 201.6482ms
+2025-07-30 12:28:19.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_vs/browserLink - null null
+2025-07-30 12:28:19.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-30 12:28:19.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.5298ms
+2025-07-30 12:28:19.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.8718ms
+2025-07-30 12:28:19.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - null null
+2025-07-30 12:28:19.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7078/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.075ms
+2025-07-30 12:28:27.806 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/Login - application/json 57
+2025-07-30 12:28:27.816 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:28:27.817 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 12:28:27.872 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:28:27.903 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ApptManager.DTOs.LoginRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:28:28.494 +05:30 [INF] Invalid login attempt.
+2025-07-30 12:28:28.501 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-07-30 12:28:28.505 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Login (ApptManager) in 598.9158ms
+2025-07-30 12:28:28.506 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:28:28.509 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/Login - 401 null text/plain; charset=utf-8 702.9169ms
+2025-07-30 12:28:53.769 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/Login - application/json 67
+2025-07-30 12:28:53.780 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:28:53.781 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 12:28:53.782 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:28:53.783 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ApptManager.DTOs.LoginRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:28:54.129 +05:30 [INF] User logged in and tokens issued.
+2025-07-30 12:28:54.130 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 12:28:54.134 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Login (ApptManager) in 351.2965ms
+2025-07-30 12:28:54.134 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:28:54.135 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/Login - 200 null application/json; charset=utf-8 366.4096ms
+2025-07-30 12:29:21.297 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/refresh-token - application/json 135
+2025-07-30 12:29:21.298 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:29:21.298 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 12:29:21.308 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 12:29:21.311 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RefreshToken(ApptManager.DTOs.RefreshTokenRequestDto, ApptManager.Repo.Services.JwtTokenService, ApptManager.Services.RefreshTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:29:21.328 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-30 12:29:21.350 +05:30 [INF] Executed action ApptManager.Controllers.UserController.RefreshToken (ApptManager) in 38.967ms
+2025-07-30 12:29:21.350 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 12:29:21.351 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/refresh-token - 400 null application/problem+json; charset=utf-8 54.1918ms
+2025-07-30 12:30:09.689 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/refresh-token - application/json 140
+2025-07-30 12:30:09.692 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:30:09.692 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 12:30:09.692 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 12:30:09.692 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RefreshToken(ApptManager.DTOs.RefreshTokenRequestDto, ApptManager.Repo.Services.JwtTokenService, ApptManager.Services.RefreshTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:30:09.695 +05:30 [WRN] Invalid user ID format in refresh token request.
+2025-07-30 12:30:09.696 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-07-30 12:30:09.696 +05:30 [INF] Executed action ApptManager.Controllers.UserController.RefreshToken (ApptManager) in 3.6131ms
+2025-07-30 12:30:09.696 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 12:30:09.696 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/refresh-token - 401 null text/plain; charset=utf-8 7.121ms
+2025-07-30 12:30:38.866 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7078/api/User/refresh-token - application/json 140
+2025-07-30 12:30:38.871 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:30:38.874 +05:30 [INF] Request origin https://localhost:7078 does not have permission to access the resource.
+2025-07-30 12:30:38.874 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 12:30:38.875 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RefreshToken(ApptManager.DTOs.RefreshTokenRequestDto, ApptManager.Repo.Services.JwtTokenService, ApptManager.Services.RefreshTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:30:38.877 +05:30 [INF] Refresh token used successfully. New tokens issued.
+2025-07-30 12:30:38.878 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 12:30:38.881 +05:30 [INF] Executed action ApptManager.Controllers.UserController.RefreshToken (ApptManager) in 6.6969ms
+2025-07-30 12:30:38.882 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.RefreshToken (ApptManager)'
+2025-07-30 12:30:38.882 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7078/api/User/refresh-token - 200 null application/json; charset=utf-8 15.7819ms
+2025-07-30 12:31:53.575 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7078/api/User/Login - application/json 58
+2025-07-30 12:31:53.577 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:31:53.577 +05:30 [INF] Request origin http://localhost:62869 does not have permission to access the resource.
+2025-07-30 12:31:53.577 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:31:53.578 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ApptManager.DTOs.LoginRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:31:53.715 +05:30 [INF] User logged in and tokens issued.
+2025-07-30 12:31:53.716 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 12:31:53.720 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Login (ApptManager) in 142.4625ms
+2025-07-30 12:31:53.720 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:31:53.721 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7078/api/User/Login - 200 null application/json; charset=utf-8 145.7957ms
+2025-07-30 12:39:34.775 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7078/api/User/Login - application/json 58
+2025-07-30 12:39:34.775 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:39:34.775 +05:30 [INF] Request origin http://localhost:62869 does not have permission to access the resource.
+2025-07-30 12:39:34.783 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-07-30 12:39:34.803 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-07-30 12:39:34.803 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:39:34.803 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ApptManager.DTOs.LoginRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:39:34.946 +05:30 [INF] User logged in and tokens issued.
+2025-07-30 12:39:34.946 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 12:39:34.947 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Login (ApptManager) in 143.6645ms
+2025-07-30 12:39:34.947 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:39:34.947 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7078/api/User/Login - 200 null application/json; charset=utf-8 172.1449ms
+2025-07-30 12:39:35.014 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - null null
+2025-07-30 12:39:35.050 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:39:35.054 +05:30 [INF] Route matched with {action = "GetUpcomingBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUpcomingBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:39:35.100 +05:30 [INF] Showing upcoming bookings
+2025-07-30 12:39:35.101 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:39:35.106 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager) in 52.4717ms
+2025-07-30 12:39:35.107 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:39:35.107 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - 200 null application/json; charset=utf-8 93.0832ms
+2025-07-30 12:42:39.711 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 12:42:39.956 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 12:42:39.956 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 12:42:40.022 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 12:42:40.022 +05:30 [INF] Hosting environment: Development
+2025-07-30 12:42:40.022 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 12:42:45.571 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - null null
+2025-07-30 12:42:45.747 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:42:45.769 +05:30 [INF] Route matched with {action = "GetUpcomingBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUpcomingBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:42:46.260 +05:30 [INF] Showing upcoming bookings
+2025-07-30 12:42:46.269 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:42:46.281 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager) in 508.6771ms
+2025-07-30 12:42:46.282 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:42:46.286 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - 200 null application/json; charset=utf-8 724.8065ms
+2025-07-30 12:44:34.628 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - null null
+2025-07-30 12:44:34.643 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:44:34.649 +05:30 [INF] Route matched with {action = "GetUpcomingBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUpcomingBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:44:34.677 +05:30 [INF] Showing upcoming bookings
+2025-07-30 12:44:34.678 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:44:34.679 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager) in 25.7357ms
+2025-07-30 12:44:34.679 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:44:34.680 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - 200 null application/json; charset=utf-8 52.9772ms
+2025-07-30 12:45:47.691 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7078/api/User/Login - application/json 58
+2025-07-30 12:45:47.696 +05:30 [INF] CORS policy execution failed.
+2025-07-30 12:45:47.697 +05:30 [INF] Request origin http://localhost:62869 does not have permission to access the resource.
+2025-07-30 12:45:47.700 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:45:47.710 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ApptManager.DTOs.LoginRequestDto, ApptManager.Repo.Services.JwtTokenService) on controller ApptManager.Controllers.UserController (ApptManager).
+2025-07-30 12:45:48.136 +05:30 [INF] User logged in and tokens issued.
+2025-07-30 12:45:48.136 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-30 12:45:48.141 +05:30 [INF] Executed action ApptManager.Controllers.UserController.Login (ApptManager) in 430.4456ms
+2025-07-30 12:45:48.141 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.UserController.Login (ApptManager)'
+2025-07-30 12:45:48.141 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7078/api/User/Login - 200 null application/json; charset=utf-8 450.402ms
+2025-07-30 12:45:48.236 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - null null
+2025-07-30 12:45:48.239 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:45:48.239 +05:30 [INF] Route matched with {action = "GetUpcomingBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUpcomingBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:45:48.262 +05:30 [INF] Showing upcoming bookings
+2025-07-30 12:45:48.263 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:45:48.263 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager) in 23.738ms
+2025-07-30 12:45:48.263 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:45:48.264 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - 200 null application/json; charset=utf-8 27.5501ms
+2025-07-30 12:46:43.216 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/TaxProfessional/getAll - null null
+2025-07-30 12:46:43.218 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager)'
+2025-07-30 12:46:43.222 +05:30 [INF] Route matched with {action = "GetAll", controller = "TaxProfessional"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ApptManager.Controllers.TaxProfessionalController (ApptManager).
+2025-07-30 12:46:43.248 +05:30 [INF] Fetched All TaxPros
+2025-07-30 12:46:43.249 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.DTOs.TaxProfessionalDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:46:43.261 +05:30 [INF] Executed action ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager) in 38.8527ms
+2025-07-30 12:46:43.261 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager)'
+2025-07-30 12:46:43.261 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/TaxProfessional/getAll - 200 null application/json; charset=utf-8 45.3172ms
+2025-07-30 12:46:44.191 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/all - null null
+2025-07-30 12:46:44.192 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetAllBookings (ApptManager)'
+2025-07-30 12:46:44.197 +05:30 [INF] Route matched with {action = "GetAllBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:46:44.210 +05:30 [INF] Fetched all bookings
+2025-07-30 12:46:44.210 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:46:44.211 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetAllBookings (ApptManager) in 13.8197ms
+2025-07-30 12:46:44.211 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetAllBookings (ApptManager)'
+2025-07-30 12:46:44.211 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/all - 200 null application/json; charset=utf-8 20.0466ms
+2025-07-30 12:46:44.974 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/all - null null
+2025-07-30 12:46:44.975 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetAllBookings (ApptManager)'
+2025-07-30 12:46:44.975 +05:30 [INF] Route matched with {action = "GetAllBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:46:44.978 +05:30 [INF] Fetched all bookings
+2025-07-30 12:46:44.978 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:46:44.978 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetAllBookings (ApptManager) in 2.9694ms
+2025-07-30 12:46:44.978 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetAllBookings (ApptManager)'
+2025-07-30 12:46:44.978 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/all - 200 null application/json; charset=utf-8 4.786ms
+2025-07-30 12:46:45.801 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - null null
+2025-07-30 12:46:45.802 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:46:45.802 +05:30 [INF] Route matched with {action = "GetUpcomingBookings", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUpcomingBookings() on controller ApptManager.Controllers.BookingController (ApptManager).
+2025-07-30 12:46:45.808 +05:30 [INF] Showing upcoming bookings
+2025-07-30 12:46:45.809 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.Models.BookingDetailsDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:46:45.809 +05:30 [INF] Executed action ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager) in 6.5413ms
+2025-07-30 12:46:45.809 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.BookingController.GetUpcomingBookings (ApptManager)'
+2025-07-30 12:46:45.809 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/Booking/upcoming - 200 null application/json; charset=utf-8 8.3539ms
+2025-07-30 12:46:46.931 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7078/api/TaxProfessional/getAll - null null
+2025-07-30 12:46:46.933 +05:30 [INF] Executing endpoint 'ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager)'
+2025-07-30 12:46:46.933 +05:30 [INF] Route matched with {action = "GetAll", controller = "TaxProfessional"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ApptManager.Controllers.TaxProfessionalController (ApptManager).
+2025-07-30 12:46:46.937 +05:30 [INF] Fetched All TaxPros
+2025-07-30 12:46:46.937 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApptManager.DTOs.TaxProfessionalDto, ApptManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-30 12:46:46.937 +05:30 [INF] Executed action ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager) in 4.0959ms
+2025-07-30 12:46:46.937 +05:30 [INF] Executed endpoint 'ApptManager.Controllers.TaxProfessionalController.GetAll (ApptManager)'
+2025-07-30 12:46:46.938 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7078/api/TaxProfessional/getAll - 200 null application/json; charset=utf-8 6.3742ms
+2025-07-30 12:47:07.888 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 12:47:08.096 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 12:47:08.096 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 12:47:08.167 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 12:47:08.167 +05:30 [INF] Hosting environment: Development
+2025-07-30 12:47:08.167 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager
+2025-07-30 12:49:21.524 +05:30 [INF] User profile is available. Using 'C:\Users\a2832868\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 12:49:21.746 +05:30 [INF] Now listening on: https://localhost:7078
+2025-07-30 12:49:21.747 +05:30 [INF] Now listening on: http://localhost:5155
+2025-07-30 12:49:21.821 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 12:49:21.822 +05:30 [INF] Hosting environment: Development
+2025-07-30 12:49:21.822 +05:30 [INF] Content root path: C:\OneDrive - H&R BLOCK LTD\Documents\MyProject\MyProject\ApptManager\ApptManager

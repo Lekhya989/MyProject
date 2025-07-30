@@ -1,6 +1,7 @@
 ﻿using ApptManager.DTOs;
 using ApptManager.Models;
 using ApptManager.Repo.Services;
+using ApptManager.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -16,12 +17,15 @@ namespace ApptManager.Controllers
         private readonly IUserService _userService;
         private readonly IMailService _mailService;
         private readonly IMapper _mapper;
+        private readonly RefreshTokenService _refreshTokenService;
 
-        public UserController(IUserService userService, IMailService mailService, IMapper mapper)
+        public UserController(IUserService userService, IMailService mailService, IMapper mapper,RefreshTokenService refreshTokenService)
         {
             _userService = userService;
             _mailService = mailService;
             _mapper = mapper;
+            _refreshTokenService = refreshTokenService;
+
         }
 
 
@@ -131,47 +135,45 @@ namespace ApptManager.Controllers
                 Body = "<h1>This is a test email from the server</h1>"
             };
 
-            try
-            {
-                await _mailService.SendEmailAsync(request);
-                Log.Information("Email sent");
-                return Ok("Email sent");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+            await _mailService.SendEmailAsync(request);
+            Log.Information($"Test mail: {request}");
+            return Ok();
         }
 
         [HttpPost("refresh-token")]
         public IActionResult RefreshToken(
-             [FromBody] RefreshTokenRequestDto request,
-             [FromServices] JwtTokenService tokenService)
+    [FromBody] RefreshTokenRequestDto request,
+    [FromServices] JwtTokenService tokenService,
+    [FromServices] RefreshTokenService refreshService)
         {
             if (string.IsNullOrEmpty(request.RefreshToken) ||
                 string.IsNullOrEmpty(request.Email) ||
                 string.IsNullOrEmpty(request.UserType) ||
                 string.IsNullOrEmpty(request.UserId))
             {
-                Log.Warning("Missing refresh token or user data.");
-                return Unauthorized("Invalid request.");
+                Log.Warning("Refresh token request missing data.");
+                return Unauthorized("Invalid refresh token request.");
             }
 
             if (!int.TryParse(request.UserId, out int userId))
             {
-                Log.Warning("Invalid user ID.");
+                Log.Warning("Invalid user ID format in refresh token request.");
                 return Unauthorized("Invalid user ID.");
             }
 
+            // You can optionally verify refresh token length or format here.
             var newAccessToken = tokenService.GenerateToken(userId, request.Email, request.UserType);
+            var newRefreshToken = refreshService.GenerateRefreshToken(); // new stateless token
 
-            Log.Information("Access token refreshed.");
+            Log.Information("Refresh token used successfully. New tokens issued.");
+
             return Ok(new
             {
                 accessToken = newAccessToken,
-                refreshToken = request.RefreshToken 
+                refreshToken = newRefreshToken
             });
         }
+
 
 
         [HttpPost("logout")]
@@ -180,6 +182,7 @@ namespace ApptManager.Controllers
             Log.Information("User logged out.");
             return Ok(new { message = "Logged out successfully." });
         }
+
 
     }
 }
